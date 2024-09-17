@@ -1,0 +1,440 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*----------------
+        Top banner
+    ----------------*/
+    .top_banner
+    {
+        font-size: 10px;
+        line-height: 16px;
+
+        padding: 8px 24px 8px 0;
+
+        text-align: left;
+    }
+
+
+    .top_banner .close_btn
+    {
+        right: 12px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        height: 52px;
+    }
+
+
+    header .logo img
+    {
+        width: 100px;
+    }
+
+
+    header .search
+    {
+        position: static;
+    }
+
+
+    header .search .mini_modal
+    {
+        top: 50%;
+        right: 24px;
+
+        width: calc(100% - 48px);
+
+        transform: translateY(-50%);
+    }
+
+
+    header .icons .btn:after
+    {
+        bottom: -16px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title span
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *.width1of3,
+    .form .columns > *.width1of6
+    {
+        width: calc(50% - var(--form_columns_offset));
+    }
+
+    .form .columns > *.width2of3,
+    .form .columns > *.width2of6,
+    .form .columns > *.width1of3.file,
+    .form .birthday,
+    .form .gender
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .submit
+    {
+        padding: 0;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block ul li:before
+    {
+        top: 7px;
+    }
+
+
+
+    /*---------------------
+        Discount banner
+    ---------------------*/
+    .discount_banner
+    {
+        height: 440px;
+    }
+
+
+    .discount_banner .title
+    {
+        font-size: 24px;
+
+        padding-bottom: 32px;
+    }
+
+
+    .discount_banner .title br
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .section .title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    .lk_info .order .head .number
+    {
+        width: 72px;
+    }
+
+
+    .lk_info .order .cart_info .product .thumb
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .lk_info .order .cart_info .product .info
+    {
+        margin-bottom: 12px;
+        padding-bottom: 0;
+    }
+
+
+    .lk_info .order .cart_info .product .price,
+    .lk_info .order .cart_info .product .amount,
+    .lk_info .order .cart_info .product .price.total
+    {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0;
+        padding-top: 0;
+        padding-left: 100px;
+    }
+
+
+
+    /*------------------
+        LK - Bonuses
+    ------------------*/
+    .lk_info .bonuses .row > *
+    {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+    .lk_info .bonuses .row > * + *
+    {
+        border-top: 1px solid #ededed;
+        border-left: none;
+    }
+
+
+    .lk_info .bonuses .warnings label > span
+    {
+        max-width: calc(100% - 87px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .cont
+    {
+        min-height: 0;
+        padding: 0;
+    }
+
+
+    .contacts_info .data
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0 24px;
+
+        background: none;
+    }
+
+
+    .contacts_info .map
+    {
+        position: relative;
+
+        height: 360px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .clear_btn
+    {
+        position: relative;
+
+        margin-bottom: 24px;
+    }
+
+
+    .cart_info .product .thumb
+    {
+        width: 168px;
+        height: 228px;
+    }
+
+
+    .cart_info .product .thumb + *
+    {
+        align-self: flex-start;
+
+        width: calc(100% - 192px);
+    }
+
+
+    .cart_info .product .brand
+    {
+        padding-right: 40px;
+    }
+
+
+    .cart_info .product .row
+    {
+        align-content: center;
+        align-items: center;
+
+        margin-top: 24px;
+
+        gap: 0;
+    }
+
+
+    .cart_info .product .amount
+    {
+        margin-left: auto;
+    }
+
+
+    .cart_info .product .price.total
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .credit_info .row > *
+    {
+        width: calc(33.333% + 1px);
+    }
+
+
+
+    /*--------------------
+        Checkout total
+    --------------------*/
+    .checkout_total
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------------
+        Product info
+    -----------------*/
+    .product_info .images
+    {
+        padding-left: 0;
+    }
+
+
+    .product_info .images .thumbs
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .head
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .products .head .sort,
+    .products .head .limit
+    {
+        position: relative;
+
+        margin-left: 0;
+    }
+
+
+    .products .head .nice-select
+    {
+        position: static;
+    }
+
+
+    .products .head .nice-select-dropdown
+    {
+        right: auto;
+        left: 0;
+
+        width: 100%;
+    }
+
+
+
+    .products .product .info
+    {
+        padding: 16px 16px 0;
+    }
+
+
+    .products .product .articul
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .row
+    {
+        margin-bottom: -40px;
+    }
+
+
+    footer .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 40px;
+    }
+
+
+    footer .row > *.copyright,
+    footer .row > *.privacy_policy_link
+    {
+        margin-bottom: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px;
+    }
+
+
+    .modal .bottom
+    {
+        width: calc(100% + 80px);
+        margin-right: -40px;
+        margin-bottom: -40px;
+        margin-left: -40px;
+        padding: 20px 40px;
+    }
+}

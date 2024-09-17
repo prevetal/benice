@@ -1,0 +1,280 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 22px;
+    }
+
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        bottom: 20px;
+
+        gap: 16px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .icons
+    {
+        gap: 16px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *.width1of3,
+    .form .columns > *.width1of6
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 19px;
+    }
+
+
+
+    /*---------------------
+        Discount banner
+    ---------------------*/
+    .discount_banner .title
+    {
+        font-size: 22px;
+
+        margin-bottom: 32px;
+        padding-bottom: 28px;
+    }
+
+
+    .discount_banner .socials
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+    .discount_banner .socials .row
+    {
+        gap: 32px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .row
+    {
+        display: block;
+    }
+
+
+    .contacts_info .locations,
+    .contacts_info .email
+    {
+        margin-top: 4px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .product .thumb
+    {
+        width: 100px;
+        height: 140px;
+    }
+
+
+    .cart_info .product .thumb + *
+    {
+        width: calc(100% - 120px);
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .credit_info .row > *
+    {
+        width: calc(50% + 1px);
+    }
+
+
+    .checkout_info .promocode .field,
+    .checkout_info .bonuses .field
+    {
+        width: calc(100% - 148px);
+    }
+
+
+    .checkout_info .promocode .btn,
+    .checkout_info .bonuses .btn
+    {
+        width: 124px;
+    }
+
+
+
+    /*--------------------
+        Checkout total
+    --------------------*/
+    .checkout_total
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+    }
+
+
+    .checkout_total .prices .label,
+    .checkout_total .total_price .label
+    {
+        width: 160px;
+    }
+
+    .checkout_total .prices .price,
+    .checkout_total .total_price .price
+    {
+        width: calc(100% - 160px);
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .order .head
+    {
+        padding: 8px 20px 8px 12px;
+    }
+
+
+    .lk_info .order .head .number
+    {
+        width: 52px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-left: 0;
+    }
+
+
+    .products .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .products .product .articul
+    {
+        width: auto;
+    }
+
+
+
+    /*------------------------
+        Cart added success
+    ------------------------*/
+    .cart_added_success
+    {
+        right: 0;
+
+        max-width: 100vw;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .row > *.copyright,
+    footer .row > *.privacy_policy_link,
+    footer .row > *.creator
+    {
+        width: calc(100% - 24px);
+
+        text-align: center;
+    }
+
+
+    footer .row > *.privacy_policy_link,
+    footer .row > *.creator
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px 24px;
+    }
+
+
+    .modal .bottom
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 20px 24px;
+    }
+}

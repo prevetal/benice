@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Site icon, size 32x32, transparency supported. Recommended format: .ico or .png -->
+		<link rel="shortcut icon" href="favicon.png">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#000000">
+		<meta name="theme-color" content="#000000">
+
+		<!-- Connecting fonts from Google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1899.css" media="print, (max-width: 1899px)" async>
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<nav class="menu row">
+							<div><a href="/">НОВИНКИ</a></div>
+
+							<div><a href="/">БРЕНДЫ</a></div>
+
+							<div><a href="/">СУМКИ</a></div>
+
+							<div><a href="/">ОДЕЖДА</a></div>
+
+							<div><a href="/">АКСЕССУАРЫ</a></div>
+
+							<div><a href="/">SALE</a></div>
+						</nav>
+
+						<div class="icons">
+							<div class="search modal_cont">
+								<button class="btn mini_modal_btn" data-modal-id="#search_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
+
+								<div class="mini_modal" id="search_modal">
+									<form action="" class="form">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Поиск">
+										</div>
+
+										<button type="submit" class="submit_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+										</button>
+
+										<div class="sep"></div>
+
+										<button type="button" class="close_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+										</button>
+									</form>
+								</div>
+							</div>
+
+							<div class="favorite">
+								<a href="/" class="btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+									<span>10</span>
+								</a>
+							</div>
+
+							<div class="cart">
+								<a class="btn active">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+									<span>3</span>
+								</a>
+							</div>
+
+							<div class="account">
+								<button class="btn modal_btn" data-modal="login_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+								</button>
+							</div>
+
+							<button class="mob_menu_btn">
+								<span></span>
+							</button>
+						</div>
+					</div>
+
+
+					<div class="cart_added_success">
+						<button class="close_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+						</button>
+
+						<div class="product">
+							<a href="/" class="thumb">
+								<img src="images/tmp/cart_product_thumb1.jpg" alt="" loading="lazy">
+							</a>
+
+							<div class="info">
+								<div class="brand">
+									<a href="/">BE NICE</a>
+								</div>
+
+								<div class="name">
+									<a href="/">Тоут-трапеция с длинным регулируемым ремнём от BE NICE рыжего оттенка</a>
+								</div>
+
+								<div class="articul">Aртикул: 906344</div>
+
+								<div class="message">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart_a"></use></svg>
+									<span>Товар добавлен в корзину</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a>
+							<span class="sep">/</span>
+
+							<span class="current">КОРЗИНА</span>
+						</div>
+
+						<h1 class="page_title">КОРЗИНА <span>Оформление заказа</span></h1>
+					</div>
+				</section>
+
+
+				<section class="content_flex block">
+					<div class="cont row">
+						<section class="content">
+							<section class="cart_info">
+								<button class="clear_btn">ОЧИСТИТЬ КОРЗИНУ</button>
+
+								<div class="list">
+									<div class="product">
+										<button class="close_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+
+											<div class="tooltip">Удалить из корзины</div>
+										</button>
+
+										<a href="/" class="thumb">
+											<img src="images/tmp/cart_product_thumb1.jpg" alt="" loading="lazy">
+										</a>
+
+										<div>
+											<div class="brand">
+												<a href="/">BE NICE</a>
+											</div>
+
+											<div class="name">
+												<a href="/">Тоут-трапеция с длинным регулируемым ремнём от BE NICE рыжего оттенка</a>
+											</div>
+
+											<div class="articul">Aртикул: 906344</div>
+
+											<div class="row">
+												<div class="price">
+													<div>13 380 руб.</div>
+													<div class="old">16 190 руб.</div>
+												</div>
+
+												<div class="amount">
+													<button type="button" class="btn minus"></button>
+
+													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus"></button>
+												</div>
+
+												<div class="price total">
+													<div>13 380 руб.</div>
+
+													<div class="points">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_points"></use></svg>
+														<span>896.05 на счет</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product">
+										<button class="close_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+
+											<div class="tooltip">Удалить из корзины</div>
+										</button>
+
+										<a href="/" class="thumb">
+											<img src="images/tmp/cart_product_thumb2.jpg" alt="" loading="lazy">
+										</a>
+
+										<div>
+											<div class="brand">
+												<a href="/">FOLLE</a>
+											</div>
+
+											<div class="name">
+												<a href="/">Сэтчел с застёжкой-пчёлкой и металлическими клёпками от FOLLE в оттенке тауп</a>
+											</div>
+
+											<div class="articul">Aртикул: 569852</div>
+
+											<div class="row">
+												<div class="price">
+													<div>10 490 руб.</div>
+												</div>
+
+												<div class="amount">
+													<button type="button" class="btn minus"></button>
+
+													<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus"></button>
+												</div>
+
+												<div class="price total">
+													<div>10 490 руб.</div>
+
+													<div class="points">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_points"></use></svg>
+														<span>1033.73 на счет</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product">
+										<button class="close_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+
+											<div class="tooltip">Удалить из корзины</div>
+										</button>
+
+										<a href="/" class="thumb">
+											<img src="images/tmp/cart_product_thumb3.jpg" alt="" loading="lazy">
+										</a>
+
+										<div>
+											<div class="brand">
+												<a href="/">BE NICE</a>
+											</div>
+
+											<div class="name">
+												<a href="/">Полукруглая сумка "TIAMO" со знаковой буквой "T"от BE NICE бордового оттенка</a>
+											</div>
+
+											<div class="articul">Aртикул: 35901637</div>
+
+											<div class="row">
+												<div class="price">
+													<div>10 380 руб.</div>
+												</div>
+
+												<div class="amount">
+													<button type="button" class="btn minus"></button>
+
+													<input type="text" value="2" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+													<button type="button" class="btn plus"></button>
+												</div>
+
+												<div class="price total">
+													<div>20 760 руб.</div>
+
+													<div class="points">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_points"></use></svg>
+														<span>2036.42 на счет</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							<section class="checkout_info">
+								<form action="" class="form">
+									<div class="section">
+										<div class="title">ДАННЫЕ ПОКУПАТЕЛЯ</div>
+
+										<div class="columns">
+											<div class="line width1of3">
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="ФАМИЛИЯ">
+												</div>
+											</div>
+
+											<div class="line width1of3">
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="ИМЯ *">
+												</div>
+											</div>
+
+											<div class="line width1of3">
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="ОТЧЕСТВО">
+												</div>
+											</div>
+
+											<div class="line width1of3">
+												<div class="field">
+													<input type="tel" name="" value="" class="input" placeholder="ТЕЛЕФОН *">
+												</div>
+											</div>
+
+											<div class="line width1of3">
+												<div class="field">
+													<input type="email" name="" value="" class="input" placeholder="E-MAIL *">
+												</div>
+											</div>
+
+											<div class="line width1of6">
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="ГОРОД">
+												</div>
+											</div>
+
+											<div class="line width1of6">
+												<div class="field">
+													<input type="text" name="" value="" class="input" placeholder="ИНДЕКС">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="section">
+										<div class="title">СПОСОБ ДОСТАВКИ</div>
+
+										<div class="columns">
+											<div class="line width2of3">
+												<div class="field">
+													<select name="delivery_method" id="delivery_method">
+														<option value="1" selected>Курьером по Москве в пределах Мкад 400 руб.</option>
+														<option value="2">Вариант 2</option>
+														<option value="3">Вариант 3</option>
+													</select>
+
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+												</div>
+
+												<div class="exp">Бесплатно при выкупе товара на 10 000 руб.</div>
+											</div>
+										</div>
+
+										<div class="delivery_method_info line addresses" style="display: block;">
+											<div class="label">Сохраненные адреса доставки</div>
+
+											<div class="methods">
+												<div class="field">
+													<label class="radio">
+														<input type="radio" name="delivery_method">
+
+														<div class="check"></div>
+
+														<div>Москва, Суздальский проспект, дом 5, офис 4</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="radio">
+														<input type="radio" name="delivery_method">
+
+														<div class="check"></div>
+
+														<div>Москва, Суздальский проспект, дом 54, офис 203</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="radio add_address_label">
+														<input type="radio" name="delivery_method" checked>
+
+														<div class="check"></div>
+
+														<div>Новый адрес</div>
+													</label>
+												</div>
+											</div>
+
+											<div class="add_address" style="display: block;">
+												<div class="columns">
+													<div class="line width1of3">
+														<div class="field">
+															<input type="text" name="" value="" class="input" placeholder="ГОРОД">
+														</div>
+													</div>
+
+													<div class="line width1of3">
+														<div class="field">
+															<input type="text" name="" value="" class="input" placeholder="УЛИЦА">
+														</div>
+													</div>
+
+													<div class="line width1of6">
+														<div class="field">
+															<input type="text" name="" value="" class="input" placeholder="ДОМ">
+														</div>
+													</div>
+
+													<div class="line width1of6">
+														<div class="field">
+															<input type="text" name="" value="" class="input" placeholder="КВАРТИРА/ОФИС">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="section payment_methods">
+										<div class="title">СПОСОБ ОПЛАТЫ</div>
+
+										<div class="line methods">
+											<div class="field">
+												<label class="radio">
+													<input type="radio" name="payment_method">
+
+													<div class="check"></div>
+
+													<div>Банковским переводом</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="radio">
+													<input type="radio" name="payment_method">
+
+													<div class="check"></div>
+
+													<div>Онлайн на сайте</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="radio">
+													<input type="radio" name="payment_method">
+
+													<div class="check"></div>
+
+													<div>Наличными в офисе</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="radio">
+													<input type="radio" name="payment_method">
+
+													<div class="check"></div>
+
+													<div>При получении</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="radio credit_label">
+													<input type="radio" name="payment_method" checked>
+
+													<div class="check"></div>
+
+													<div>
+														Оплата долями
+
+														<div class="tooltip">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_tooltip"></use></svg>
+
+															<div class="text">Текст подсказки для пункта “Оплата долями”</div>
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+
+										<div class="line credit_info" style="display: block;">
+											<div class="row">
+												<div>
+													<div class="price">11 157 <span>руб.</span></div>
+													<div class="date">Сегодня</div>
+												</div>
+
+												<div>
+													<div class="price">11 157 <span>руб.</span></div>
+													<div class="date">10 июля</div>
+												</div>
+
+												<div>
+													<div class="price">11 157 <span>руб.</span></div>
+													<div class="date">10 августа</div>
+												</div>
+
+												<div>
+													<div class="price">11 157 <span>руб.</span></div>
+													<div class="date">10 сентября</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<textarea name="" placeholder="КОММЕНТАРИИ"></textarea>
+											</div>
+										</div>
+
+										<div class="promocode">
+											<div class="field">
+												<input type="text" name="" value="" class="input" placeholder="ПРОМОКОД">
+											</div>
+
+											<button type="button" class="btn">ПРИМЕНИТЬ</button>
+										</div>
+
+										<div class="bonuses">
+											<div class="label">
+												<div><b>На вашем счете 1 000 бонусов</b></div>
+												<div>На этот заказ вы можете потратить 1 000 бонусов.</div>
+											</div>
+
+											<div class="field">
+												<input type="number" name="" value="" class="input" placeholder="1000">
+											</div>
+
+											<button type="button" class="btn">СПИСАТЬ</button>
+										</div>
+									</div>
+								</form>
+							</section>
+						</section>
+
+
+						<aside>
+							<div class="checkout_total">
+								<div class="title">ИТОГО</div>
+
+								<div class="prices">
+									<div>
+										<div class="label">Товары на сумму</div>
+										<div class="price">44 630 руб.</div>
+									</div>
+
+									<div>
+										<div class="label">Доставка</div>
+										<div class="price">400 руб.</div>
+									</div>
+								</div>
+
+								<div class="total_price">
+									<div class="label">К оплате</div>
+
+									<div class="price">
+										<div>45 030 руб.</div>
+
+										<div class="points">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_points"></use></svg>
+											<span>1627.92 на счет</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="agree">
+									<label class="checkbox">
+										<input type="checkbox" name="agree">
+
+										<div class="check">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+										</div>
+
+										<div>Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">политику конфиденциальности</a>.</div>
+									</label>
+								</div>
+
+								<button class="checkout_btn">КУПИТЬ</button>
+							</div>
+						</aside>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="border">
+				<div class="cont">
+					<div class="row">
+						<div class="col">
+							<div class="title">ПОКУПАТЕЛЯМ</div>
+
+							<div class="links">
+								<div><a href="/">О НАС</a></div>
+
+								<div><a href="/">ДОСТАВКА</a></div>
+
+								<div><a href="/">ОПЛАТА</a></div>
+
+								<div><a href="/">ГАРАНТИЯ И УХОД</a></div>
+
+								<div><a href="/">ВОЗВРАТ</a></div>
+
+								<div><a href="/">ОПТОВЫЕ ЗАКАЗЫ</a></div>
+
+								<div><a href="/">РЕКВИЗИТЫ</a></div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="title">КАТАЛОГ</div>
+
+							<div class="links">
+								<div><a href="/">НОВИНКИ</a></div>
+
+								<div><a href="/">СУМКИ</a></div>
+
+								<div><a href="/">АКСЕССУАРЫ</a></div>
+
+								<div><a href="/">ОДЕЖДА</a></div>
+
+								<div><a href="/">БРЕНДЫ</a></div>
+
+								<div><a href="/">SALE</a></div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="title">КОНТАКТЫ</div>
+
+							<div class="phone">
+								<div><a href="tel:+79855777993">+7 985 577 79 93</a></div>
+							</div>
+
+							<div class="phone">
+								<div><a href="tel:+79031888593">+7 903 188 85 93</a></div>
+							</div>
+
+							<div class="email">
+								<div><a href="mailto:INFO@SHOPBENICE.COM">INFO@SHOPBENICE.COM</a></div>
+							</div>
+
+							<div class="socials">
+								<a href="/" target="_blank" rel="noopener nofollow" class="whatsapp_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="tg_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="vk_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_vk"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="title">ОТЗЫВЫ</div>
+
+							<div class="rating">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_star"></use></svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col copyright">
+							&copy;2020–2024 Аксессуары и одежда. Все права защищены.
+						</div>
+
+						<div class="col privacy_policy_link">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+
+						<div class="col creator">
+							<a href="/" target="_blank" rel="noopener nofollow">Создание сайта <span>Точка.ру</span></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<section class="modal" id="login_modal">
+			<div class="modal_title">АВТОРИЗАЦИЯ</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-MAIL">
+
+						<!-- <input type="email" name="" value="" class="input error" placeholder="E-MAIL"> -->
+						<!-- <div class="error_text">Необходимо указать E-mail.</div> -->
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="ПАРОЛЬ">
+					</div>
+				</div>
+
+				<div class="line remember">
+					<div class="field">
+						<label class="checkbox">
+							<input type="checkbox" name="remember">
+
+							<div class="check">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+							</div>
+
+							<div>Запомнить меня</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ВОЙТИ</button>
+
+					<button class="forgot_btn modal_btn" data-modal="recovery_pass_modal">ВОССТАНОВИТЬ ПАРОЛЬ</button>
+				</div>
+			</form>
+
+			<div class="bottom">
+				<button class="btn modal_btn" data-modal="register_modal">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+			</div>
+		</section>
+
+
+		<section class="modal" id="recovery_pass_modal">
+			<div class="modal_title">ВОССТАНОВЛЕНИЕ ПАРОЛЯ</div>
+
+			<div class="modal_desc">Введите адрес электронной почты, указанный при регистрации.</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-MAIL">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ВОССТАНОВИТЬ ПАРОЛЬ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="register_modal">
+			<div class="modal_title">РЕГИСТРАЦИЯ</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="ИМЯ *">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="ФАМИЛИЯ *">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="ТЕЛЕФОН *">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-MAIL *">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="ПАРОЛЬ *">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="ПОВТОРИТЕ ПАРОЛЬ *">
+					</div>
+				</div>
+
+				<div class="line agree">
+					<label class="checkbox">
+						<input type="checkbox" name="agree">
+
+						<div class="check">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+						</div>
+
+						<div>Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">политику конфиденциальности</a>.</div>
+					</label>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

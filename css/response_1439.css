@@ -1,0 +1,341 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 24px;
+    }
+
+
+
+    /*----------------
+        Top banner
+    ----------------*/
+    .top_banner
+    {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+
+    .top_banner .close_btn
+    {
+        right: 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        height: 64px;
+    }
+
+
+    header .search .mini_modal
+    {
+        width: 380px;
+    }
+
+
+    header .menu a:after,
+    header .icons .btn:after
+    {
+        bottom: -22px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .image_block
+    {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+
+    .text_block .image_block .data
+    {
+        width: calc(50% - 40px);
+    }
+
+
+    .text_block .image_block .image
+    {
+        width: calc(50% + 24px);
+        margin-left: -24px;
+    }
+
+
+    .text_block .image_block .data + .image
+    {
+        margin-right: -24px;
+    }
+
+
+    .text_block blockquote
+    {
+        max-width: calc(100% - 40px);
+        margin-left: 40px;
+        padding: 16px 0 16px 47px;
+    }
+
+
+    .text_block table td
+    {
+        min-width: 148px;
+        padding: 16px 0;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .category .name
+    {
+        font-size: 32px;
+    }
+
+
+    .categories .category .btn
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*---------------------
+        Discount banner
+    ---------------------*/
+    .discount_banner .title
+    {
+        font-size: 32px;
+    }
+
+
+
+    /*-------------
+        LK info
+    -------------*/
+    .lk_info .section .title
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+    .lk_info .order .cart_info .product .info
+    {
+        width: calc(100% - 670px);
+    }
+
+
+    .lk_info .order .cart_info .titles .price,
+    .lk_info .order .cart_info .product .price
+    {
+        width: 140px;
+        min-width: 140px;
+    }
+
+    .lk_info .order .cart_info .titles .amount,
+    .lk_info .order .cart_info .product .amount
+    {
+        width: 140px;
+        min-width: 140px;
+    }
+
+    .lk_info .order .cart_info .titles .price.total,
+    .lk_info .order .cart_info .product .price.total
+    {
+        width: 100px;
+        min-width: 100px;
+    }
+
+
+
+    /*------------------
+        LK - Bonuses
+    ------------------*/
+    .lk_info .bonuses .val
+    {
+        font-size: 28px;
+    }
+
+
+
+    .lk_info .bonuses_history .code
+    {
+        width: 68px;
+        min-width: 68px;
+    }
+
+    .lk_info .bonuses_history .date
+    {
+        width: 168px;
+        min-width: 168px;
+    }
+
+    .lk_info .bonuses_history .points
+    {
+        width: 140px;
+        min-width: 140px;
+    }
+
+    .lk_info .bonuses_history .points_before
+    {
+        width: 100px;
+        min-width: 100px;
+    }
+
+    .lk_info .bonuses_history .points_after
+    {
+        width: 100px;
+        min-width: 100px;
+    }
+
+
+
+    /*----------------
+        Info block
+    ----------------*/
+    .info_block .text_block
+    {
+        width: calc(50% - 40px);
+    }
+
+
+    .info_block .slider
+    {
+        width: calc(50% + 24px);
+        margin-left: -24px;
+    }
+
+
+    .info_block .text_block + .slider
+    {
+        margin-right: -24px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .titles
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .cart_info .product
+    {
+        padding: 24px 0;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .section .title
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+    .checkout_info .credit_info .row > *
+    {
+        padding: 15px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .cont
+    {
+        min-height: 560px;
+    }
+
+
+    .contacts_info .data
+    {
+        padding-bottom: 32px;
+    }
+
+
+
+    /*------------------
+        Product info
+    -----------------*/
+    .product_info .images
+    {
+        width: calc(100% - 560px);
+        padding-left: 180px;
+    }
+
+
+    .product_info .images .thumbs
+    {
+        width: 156px;
+    }
+
+
+    .product_info .images .thumbs .swiper-slide
+    {
+        height: 212px;
+    }
+
+
+    .product_info .data
+    {
+        width: 536px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .filter
+    {
+        width: 375px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+
+    .products .product .info
+    {
+        padding: 16px 16px 0;
+    }
+
+
+    .products .product .buy_btn
+    {
+        margin-left: 16px;
+    }
+
+
+
+    /*------------------------
+        Cart added success
+    ------------------------*/
+    .cart_added_success
+    {
+        right: 24px;
+
+        max-width: calc(100vw - 48px);
+    }
+}
