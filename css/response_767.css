@@ -437,4 +437,29 @@
         margin-left: -40px;
         padding: 20px 40px;
     }
+
+
+
+    #gift_modal .product
+    {
+        padding: 15px;
+    }
+
+
+    #gift_modal .product .thumb
+    {
+        width: 100px;
+        height: 137px;
+    }
+
+    #gift_modal .product .info
+    {
+        width: calc(100% - 112px);
+    }
+
+
+    #gift_modal .product .price
+    {
+        margin-top: 12px;
+    }
 }

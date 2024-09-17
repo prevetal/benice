@@ -6330,3 +6330,149 @@ footer .creator a:hover span
 
     text-transform: uppercase;
 }
+
+
+
+#gift_modal .row
+{
+    margin-top: 32px;
+}
+
+
+#gift_modal .product
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: calc(100% - 490px);
+    padding: 19px;
+
+    border: 1px solid #ededed;
+}
+
+
+#gift_modal .product .thumb
+{
+    display: block;
+
+    width: 200px;
+    max-width: 100%;
+    height: 267px;
+
+    text-decoration: none;
+
+    color: currentColor;
+    background: #ddd;
+}
+
+
+#gift_modal .product .thumb img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+#gift_modal .product .info
+{
+    align-self: center;
+
+    width: calc(100% - 228px);
+    margin-left: auto;
+}
+
+
+#gift_modal .product .brand
+{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+
+    text-transform: uppercase;
+}
+
+
+#gift_modal .product .brand a
+{
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+#gift_modal .product .name
+{
+    font-size: 12px;
+    line-height: 18px;
+
+    margin-top: 10px;
+
+    text-transform: uppercase;
+}
+
+
+#gift_modal .product .name a
+{
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+#gift_modal .product .name a:hover
+{
+    color: #9f9f9f;
+}
+
+
+#gift_modal .product .articul
+{
+    font-size: 12px;
+    line-height: 18px;
+
+    margin-top: 10px;
+
+    color: #9f9f9f;
+}
+
+
+#gift_modal .product .price
+{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+
+    margin-top: 28px;
+}
+
+
+#gift_modal .product .price .old
+{
+    font-weight: 400;
+
+    margin-left: 6px;
+
+    text-decoration: line-through;
+
+    color: #9f9f9f;
+}
+
+
+#gift_modal .form
+{
+    width: 440px;
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+}

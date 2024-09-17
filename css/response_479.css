@@ -277,4 +277,11 @@
         margin-left: -24px;
         padding: 20px 24px;
     }
+
+
+
+    #gift_modal .product
+    {
+        padding: 9px;
+    }
 }
