@@ -1882,8 +1882,8 @@ aside
     display: flex;
     align-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 
@@ -1892,13 +1892,73 @@ aside
     display: block;
 
     width: 17px;
+    min-width: 17px;
     height: 17px;
+    margin-right: 9px;
 }
 
 
 .form .file label span
 {
-    width: calc(100% - 26px);
+    max-width: 100%;
+}
+
+
+.form .file label .tooltip
+{
+    position: relative;
+
+    margin-left: 8px;
+
+    pointer-events: auto;
+}
+
+
+.form .file label .tooltip .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    transition: color .2s linear;
+
+    color: #9f9f9f;
+}
+
+
+.form .file label .tooltip .text
+{
+    font-size: 12px;
+    line-height: 18px;
+
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    display: none;
+
+    margin-bottom: 10px;
+    padding: 9px 19px;
+
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+
+    color: var(--text_color);
+    border: 1px solid #ededed;
+    background: var(--bg);
+}
+
+
+.form .file label .tooltip:hover .icon
+{
+    color: var(--text_color);
+}
+
+.form .file label .tooltip:hover .text
+{
+    display: block;
 }
 
 
@@ -6171,6 +6231,11 @@ footer .creator a:hover span
 
     color: var(--text_color);
     background: #fff;
+}
+
+.modal.big
+{
+    width: 1288px;
 }
 
 
