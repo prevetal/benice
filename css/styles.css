@@ -3205,9 +3205,10 @@ aside
 {
     font-size: 12px;
     line-height: 18px;
+    /* margin-right: 20px; */
 
+    width: 100%;
     margin-top: 10px;
-    margin-right: 20px;
 
     color: #9f9f9f;
 }
