@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			on: {
 				init: swiper => {
 					setTimeout(() => {
+						setHeight(swiper.el.querySelectorAll('.product'))
+
 						$(swiper.el).find('.swiper-button-next, .swiper-button-prev').css(
 							'top', $(swiper.el).find('.thumb').outerHeight() * 0.5
 						)
@@ -67,6 +69,12 @@ document.addEventListener('DOMContentLoaded', function () {
 				},
 				resize: swiper => {
 					setTimeout(() => {
+						let items = swiper.el.querySelectorAll('.product')
+
+						items.forEach(el => el.style.height = 'auto')
+
+						setHeight(items)
+
 						$(swiper.el).find('.swiper-button-next, .swiper-button-prev').css(
 							'top', $(swiper.el).find('.thumb').outerHeight() * 0.5
 						)

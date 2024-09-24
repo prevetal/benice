@@ -322,9 +322,9 @@
     }
 
 
-    .products .product .buy_btn
+    .products .product .buy
     {
-        margin-left: 16px;
+        gap: 16px;
     }
 
 

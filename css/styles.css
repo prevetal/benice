@@ -2956,6 +2956,9 @@ aside
 .products .product
 {
     position: relative;
+
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -3107,12 +3110,20 @@ aside
 .products .product .info
 {
     display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+
+    padding: 20px 20px 0;
+}
+
+
+.products .product .inline
+{
+    display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-start;
-
-    padding: 20px 20px 0;
+    justify-content: space-between;
 }
 
 
@@ -3163,6 +3174,8 @@ aside
     font-size: 12px;
     line-height: 18px;
 
+    flex: 1 0 auto;
+
     width: 100%;
     margin-top: 10px;
 
@@ -3194,9 +3207,23 @@ aside
     line-height: 18px;
 
     margin-top: 10px;
-    margin-right: auto;
+    margin-right: 20px;
 
     color: #9f9f9f;
+}
+
+
+.products .product .buy
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: auto;
+
+    gap: 20px;
 }
 
 
@@ -3237,7 +3264,6 @@ aside
     width: 15px;
     height: 16px;
     margin-top: 10px;
-    margin-left: 20px;
 
     transition: color .2s linear;
 }
