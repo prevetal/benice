@@ -333,6 +333,9 @@
     -----------------*/
     .product_info .images
     {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
         padding-left: 0;
     }
 
@@ -340,6 +343,20 @@
     .product_info .images .thumbs
     {
         display: none;
+    }
+
+
+    .product_info .credit span
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .product_info .credit img
+    {
+        margin-top: 8px;
+        margin-left: 0;
     }
 
 

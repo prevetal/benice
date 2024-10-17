@@ -264,6 +264,12 @@
     }
 
 
+    .products .filter .data
+    {
+        padding-left: 0;
+    }
+
+
 
     /*---------------------
         Discount banner
