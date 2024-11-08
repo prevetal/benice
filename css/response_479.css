@@ -41,24 +41,6 @@
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
-    /*---------------
-        Page head
-    ---------------*/
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
     /*------------------
         Form elements
     ------------------*/
@@ -136,6 +118,64 @@
     .cart_info .product .thumb + *
     {
         width: calc(100% - 120px);
+    }
+
+
+    .cart_info .product .name
+    {
+        min-height: 54px;
+    }
+
+
+    .cart_info .product .row
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+
+        margin-top: 10px;
+        margin-left: -120px;
+    }
+
+
+    .cart_info .product .price,
+    .cart_info .product .price.total
+    {
+        order: 3;
+
+        margin-top: 16px;
+    }
+
+
+    .cart_info .product .price.total
+    {
+        width: auto;
+        margin-left: auto;
+
+        text-align: right;
+    }
+
+
+    .cart_info .product .points
+    {
+        font-size: 12px;
+
+        justify-content: flex-end;
+
+        margin-top: 0;
+    }
+
+
+    .cart_info .product .points .icon
+    {
+        width: 26px;
+        height: 15px;
+    }
+
+
+    .cart_info .product .amount
+    {
+        width: calc(100% - 120px);
+        margin-left: 120px;
     }
 
 

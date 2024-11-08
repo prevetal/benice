@@ -397,6 +397,116 @@ button
 
 
 
+/*---------------------
+    Mob. top banner
+---------------------*/
+.mob_top_banner
+{
+    font-size: 12px;
+    line-height: 20px;
+
+    position: relative;
+    display: none;
+
+    padding: 8px 24px;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #ededed;
+    background: var(--bg);
+}
+
+
+.mob_top_banner:before,
+.mob_top_banner:after
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 40px;
+    height: 100%;
+
+    content: '';
+
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+
+.mob_top_banner:after
+{
+    top: 0;
+    right: 0;
+    left: auto;
+
+    width: 68px;
+
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
+}
+
+
+.mob_top_banner .close_btn
+{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 24px;
+    height: 100%;
+    margin: auto 0;
+
+    transition: color .2s linear;
+
+    color: #898989;
+}
+
+
+.mob_top_banner .close_btn .icon
+{
+    display: block;
+
+    width: 11px;
+    height: 11px;
+}
+
+
+.mob_top_banner .close_btn:hover
+{
+    color: var(--text_color);
+}
+
+
+.mob_top_banner .swiper
+{
+    overflow: visible !important;
+}
+
+
+.mob_top_banner .swiper-wrapper
+{
+    transition-timing-function: linear !important;
+}
+
+
+.mob_top_banner .swiper-slide
+{
+    width: auto;
+}
+
+
+
 /*--------------
     All link
 --------------*/
@@ -2432,6 +2542,12 @@ aside
     width: 100%;
 
     object-fit: cover;
+}
+
+
+.main_slider .image img.mob
+{
+    display: none;
 }
 
 

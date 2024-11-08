@@ -4,6 +4,37 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
+	// Top banner
+	$('.top_banner .close_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.top_banner').slideUp(300)
+	})
+
+
+	// Mob. top banner
+	if ($('.mob_top_banner').length) {
+		$('.mob_top_banner .close_btn').click(function(e) {
+			e.preventDefault()
+
+			$('.mob_top_banner').slideUp(300)
+		})
+
+
+		new Swiper('.mob_top_banner .swiper', {
+			spaceBetween: 0,
+			speed: 50000,
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: true
+			},
+			loop: true,
+			slidesPerView: 'auto',
+			allowTouchMove: false
+		})
+	}
+
+
 	// Main slider
 	let mainSlider = document.querySelector('.main_slider .swiper')
 
@@ -395,14 +426,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		$('.mini_modal, .mini_modal_btn').removeClass('active')
 
 		if (is_touch_device()) $('body').css('cursor', 'default')
-	})
-
-
-	// Top banner
-	$('.top_banner .close_btn').click(function(e) {
-		e.preventDefault()
-
-		$('.top_banner').slideUp(300)
 	})
 
 

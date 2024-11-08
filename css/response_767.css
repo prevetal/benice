@@ -22,18 +22,17 @@
     ----------------*/
     .top_banner
     {
-        font-size: 10px;
-        line-height: 16px;
-
-        padding: 8px 24px 8px 0;
-
-        text-align: left;
+        display: none;
     }
 
 
-    .top_banner .close_btn
+
+    /*--------------------
+        Mob top banner
+    --------------------*/
+    .mob_top_banner
     {
-        right: 12px;
+        display: block;
     }
 
 
@@ -87,12 +86,6 @@
 
 
 
-    /*----------------
-        Block head
-    ----------------*/
-
-
-
     /*------------------
         Form elements
     ------------------*/
@@ -125,6 +118,35 @@
     .text_block ul li:before
     {
         top: 7px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .image img
+    {
+        display: none;
+
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .main_slider .image img.mob
+    {
+        display: block;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .row > *
+    {
+        width: 100%;
     }
 
 

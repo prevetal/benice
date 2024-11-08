@@ -178,54 +178,9 @@
     /*----------------
         Categories
     ----------------*/
-    .categories .row
-    {
-        display: block;
-        overflow: auto;
-
-        white-space: nowrap;
-
-        scroll-padding: 0;
-        scroll-snap-type: x mandatory;
-        scrollbar-color: transparent transparent !important;
-        scrollbar-width: thin !important;
-    }
-
-
-    .categories .row::-webkit-scrollbar
-    {
-        display: none !important;
-
-        width: 0 !important;
-        height: 0 !important;
-
-        background-color: transparent !important;
-    }
-
-
-    .categories .row::-webkit-scrollbar-thumb
-    {
-        background-color: transparent !important;
-    }
-
-
     .categories .row > *
     {
-        display: inline-block;
-
-        width: 340px;
-        max-width: none;
-        margin: 0;
-
-        vertical-align: top;
-
-        scroll-snap-align: start;
-    }
-
-
-    .categories .row > * + *
-    {
-        margin-left: -4px;
+        width: 50%;
     }
 
 
