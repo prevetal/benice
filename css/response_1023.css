@@ -180,13 +180,13 @@
     ----------------*/
     .categories .row > *
     {
-        width: 50%;
+        width: 33.333%;
     }
 
 
     .categories .category .name
     {
-        font-size: 26px;
+        font-size: 24px;
     }
 
 
