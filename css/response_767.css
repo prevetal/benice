@@ -144,6 +144,14 @@
     /*----------------
         Categories
     ----------------*/
+    .categories .row
+    {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
     .categories .row > *
     {
         width: 100%;
