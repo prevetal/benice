@@ -20,6 +20,23 @@
     }
 
 
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    .block.mob_no_m
+    {
+        margin-bottom: 0;
+    }
+
+    .block.mob_m
+    {
+        margin-bottom: 40px;
+    }
+
+
 
     /*--------------
         Fancybox
@@ -34,9 +51,69 @@
     /*------------
         Header
     ------------*/
+    header.mob_absolute
+    {
+        position: absolute;
+
+        color: #fff;
+        border: none;
+        background: none;
+    }
+
+    .mob_top_banner + header.mob_absolute
+    {
+        top: 37px;
+    }
+
+    .mob_top_banner.hide + header.mob_absolute
+    {
+        top: 0;
+
+        transition: top .3s linear;
+    }
+
+
+    header .cont
+    {
+        height: 48px;
+    }
+
+
+    header.mob_absolute .logo img
+    {
+        display: none;
+    }
+
+    header.mob_absolute .logo img + img
+    {
+        display: block;
+    }
+
+
     header .icons
     {
-        gap: 16px;
+        gap: 18px;
+    }
+
+
+
+    .lock header.mob_absolute,
+    header.mob_absolute.is_stuck
+    {
+        color: #000;
+        background: #fff;
+    }
+
+    .lock header.mob_absolute .logo img,
+    header.mob_absolute.is_stuck .logo img
+    {
+        display: block;
+    }
+
+    .lock header.mob_absolute .logo img + img,
+    header.mob_absolute.is_stuck .logo img + img
+    {
+        display: none;
     }
 
 
@@ -62,28 +139,100 @@
 
 
 
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head.mob_m
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .image:after
+    {
+        opacity: 1;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .row
+    {
+        gap: 0;
+    }
+
+
+    .categories .category .name
+    {
+        font-size: 34px;
+        font-weight: 200;
+    }
+
+
+    .categories .category .btn
+    {
+        display: none;
+    }
+
+
+    .categories .category img
+    {
+        width: 124%;
+        margin: 0 -12%;
+    }
+
+
+
     /*---------------------
         Discount banner
     ---------------------*/
+    .discount_banner
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        height: 640px;
+        padding: 48px 0;
+    }
+
+
     .discount_banner .title
     {
-        font-size: 22px;
+        font-size: 20px;
+        line-height: 30px;
 
-        margin-bottom: 32px;
-        padding-bottom: 28px;
+        margin-bottom: 56px;
+        padding-bottom: 56px;
     }
 
 
     .discount_banner .socials
     {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 16px;
+        line-height: 20px;
     }
 
 
     .discount_banner .socials .row
     {
-        gap: 32px;
+        gap: 36px;
+    }
+
+
+    .discount_banner .bg
+    {
+        display: none;
+    }
+
+    .discount_banner .mob_bg
+    {
+        display: block;
     }
 
 
@@ -262,6 +411,28 @@
 
 
 
+    /*--------------
+        Products
+    --------------*/
+    .products .swiper-slide
+    {
+        width: 100vw;
+    }
+
+
+    .products .product .info
+    {
+        padding: 20px 20px 0;
+    }
+
+
+    .products .product .articul
+    {
+        width: auto;
+    }
+
+
+
     /*------------------------
         Cart added success
     ------------------------*/
@@ -277,13 +448,87 @@
     /*------------
         Footer
     ------------*/
+    footer
+    {
+        position: relative;
+
+        padding: 40px 0;
+    }
+
+
+    footer .row
+    {
+        justify-content: space-between;
+
+        margin-left: -20px;
+    }
+
+    footer .row + .row
+    {
+        margin-top: 30px;
+    }
+
+
+    footer .row > *
+    {
+        width: auto;
+        min-width: 120px;
+        margin-left: 20px;
+    }
+
+
+    footer .row > *.mob_big
+    {
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #ededed;
+    }
+
+
     footer .row > *.copyright,
     footer .row > *.privacy_policy_link,
     footer .row > *.creator
     {
-        width: calc(100% - 24px);
+        width: calc(100% - 20px);
 
-        text-align: center;
+        text-align: left;
+    }
+
+
+    footer .title
+    {
+        margin: 0;
+
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+
+    footer .title .arr
+    {
+        display: block;
+    }
+
+
+    footer .links
+    {
+        display: none;
+
+        padding-top: 10px;
+    }
+
+
+    footer .links > * + *
+    {
+        margin-top: 10px;
+    }
+
+
+    footer .copyright br
+    {
+        display: block;
     }
 
 
@@ -291,6 +536,36 @@
     footer .row > *.creator
     {
         margin-top: 12px;
+    }
+
+
+    footer .socials
+    {
+        position: absolute;
+        right: 20px;
+        bottom: 177px;
+
+        width: 120px;
+        margin: 0;
+
+        gap: 20px;
+    }
+
+
+    footer .socials .icon
+    {
+        width: 18px;
+        height: 18px;
+    }
+
+    footer .socials .tg_link .icon
+    {
+        width: 21px;
+    }
+
+    footer .socials .vk_link .icon
+    {
+        width: 24px;
     }
 
 

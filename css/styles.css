@@ -406,6 +406,8 @@ button
     line-height: 20px;
 
     position: relative;
+    z-index: 101;
+
     display: none;
 
     padding: 8px 24px;
@@ -753,6 +755,12 @@ header .logo img
 
     width: 125px;
     max-width: 100%;
+}
+
+
+header .logo img + img
+{
+    display: none;
 }
 
 
@@ -1177,6 +1185,127 @@ header .mob_menu_btn.active span:after
     top: 0;
 
     transform: rotate(-45deg);
+}
+
+
+
+/*---------------
+    Mob. menu
+---------------*/
+.mob_menu
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 100%;
+
+    width: 100%;
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
+    padding-top: 85px;
+
+    transition: transform .3s linear;
+
+    background: var(--bg);
+}
+
+
+.mob_top_banner.hide ~ .mob_menu
+{
+    padding-top: 48px;
+}
+
+
+.mob_menu.show
+{
+    transform: translateX(-100%);
+}
+
+
+.mob_menu .scroll
+{
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
+    padding: 20px;
+
+    overscroll-behavior-y: contain;
+}
+
+
+.mob_menu .links
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.mob_menu .links > * > a
+{
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+
+.mob_menu .links > * > a .arr
+{
+    display: block;
+
+    width: 8px;
+    height: 13px;
+    margin-right: 3px;
+
+    transition: transform .2s linear;
+    transform: rotate(-90deg);
+}
+
+
+.mob_menu .links .sub
+{
+    display: none;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #ededed;
+}
+
+
+.mob_menu .links .sub > * + *
+{
+    margin-top: 10px;
+}
+
+
+.mob_menu .links .sub a
+{
+    font-style: 13px;
+    line-height: 19px;
+
+    display: block;
+
+    text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -2527,11 +2656,33 @@ aside
 
 .main_slider .image
 {
+    position: relative;
+
     display: block;
 
     text-decoration: none;
 
     color: currentColor;
+}
+
+
+.main_slider .image:after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: opacity .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    background: rgba(0, 0, 0, .15);
 }
 
 
@@ -3551,7 +3702,8 @@ aside
 }
 
 
-.discount_banner .bg
+.discount_banner .bg,
+.discount_banner .mob_bg
 {
     position: absolute;
     z-index: 1;
@@ -3564,6 +3716,11 @@ aside
     height: 100%;
 
     object-fit: cover;
+}
+
+.discount_banner .mob_bg
+{
+    display: none;
 }
 
 
@@ -6156,9 +6313,35 @@ footer .title
     font-weight: 600;
     line-height: 20px;
 
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     margin-bottom: 10px;
 
     text-transform: uppercase;
+    pointer-events: none;
+}
+
+
+footer .title .arr
+{
+    display: none;
+
+    width: 7px;
+    height: 13px;
+    margin-right: 4px;
+
+    transition: transform .2s linear;
+    transform: rotate(-90deg);
+}
+
+
+footer .title.active .arr
+{
+    transform: rotate(90deg);
 }
 
 
@@ -6297,6 +6480,12 @@ footer .copyright
     line-height: 20px;
 
     color: #9f9f9f;
+}
+
+
+footer .copyright br
+{
+    display: none;
 }
 
 

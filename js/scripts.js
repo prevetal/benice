@@ -17,9 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		$('.mob_top_banner .close_btn').click(function(e) {
 			e.preventDefault()
 
-			$('.mob_top_banner').slideUp(300)
+			$('.mob_top_banner').addClass('hide').slideUp(300)
 		})
-
 
 		new Swiper('.mob_top_banner .swiper', {
 			spaceBetween: 0,
@@ -435,12 +434,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$('header .mob_menu_btn').toggleClass('active')
 		$('body').toggleClass('lock')
-		$('header .menu').toggleClass('show')
 
+		if (WW > 767) {
+			$('header .menu').toggleClass('show')
 
-		$('header .mob_menu_btn').hasClass('active')
-			? $('.overlay').fadeIn(300)
-			: $('.overlay').fadeOut(200)
+			$('header .mob_menu_btn').hasClass('active')
+				? $('.overlay').fadeIn(300)
+				: $('.overlay').fadeOut(200)
+		} else {
+			$('.mob_menu').toggleClass('show')
+		}
 	})
 
 
@@ -590,6 +593,30 @@ document.addEventListener('DOMContentLoaded', function () {
 				? $('.checkout_info .payment_methods .credit_info').fadeIn(300)
 				: $('.checkout_info .payment_methods .credit_info').hide()
 		}
+	})
+
+
+	// Mob. footer
+	$('footer .title').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
+
+
+	// Sticky mob. header
+	if (WW < 480) {
+		$('header.mob_absolute').stick_in_parent({
+			offset_top: 0
+		})
+	}
+
+
+	// Mob. menu
+	$('.mob_menu .links > * > a').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
 	})
 })
 
