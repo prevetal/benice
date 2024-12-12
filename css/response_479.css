@@ -183,8 +183,11 @@
 
     .categories .category img
     {
-        width: 124%;
-        margin: 0 -12%;
+        width: 100%;
+        height: calc(100vh - 48px);
+        margin: 0;
+
+        object-fit: cover;
     }
 
 
@@ -197,8 +200,8 @@
         flex-direction: column;
         justify-content: flex-start;
 
-        height: 640px;
-        padding: 48px 0;
+        height: calc(100vh - 48px);
+        padding: 16% 0;
     }
 
 
@@ -416,7 +419,7 @@
     --------------*/
     .products .swiper-slide
     {
-        width: 100vw;
+        width: 320px;
     }
 
 

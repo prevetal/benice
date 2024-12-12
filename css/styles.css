@@ -2699,6 +2699,8 @@ aside
 .main_slider .image img.mob
 {
     display: none;
+
+    height: calc(100vh - 37px);
 }
 
 

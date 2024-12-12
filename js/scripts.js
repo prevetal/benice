@@ -75,6 +75,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				prevEl: '.swiper-button-prev'
 			},
 			lazy: true,
+			autoplay: {
+				delay: Number(el.getAttribute('data-autoplay')) || 0,
+				disableOnInteraction: false
+			},
 			spaceBetween: 5,
 			breakpoints: {
 				0: {
