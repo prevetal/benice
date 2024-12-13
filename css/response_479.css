@@ -216,8 +216,13 @@
     }
 
 
-    .discount_banner .cont.justify .title,
-    .discount_banner .cont.justify .line
+    .discount_banner .cont.justify .title
+    {
+        margin-top: auto;
+    }
+
+
+    .discount_banner .cont.justify .socials
     {
         margin-bottom: auto;
     }
