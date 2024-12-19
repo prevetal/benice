@@ -73,7 +73,7 @@
     /*------------
         Header
     ------------*/
-    header .cont
+    header > .cont
     {
         height: 68px;
     }

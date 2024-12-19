@@ -75,7 +75,7 @@
     /*------------
         Header
     ------------*/
-    header .cont
+    header > .cont
     {
         height: 60px;
     }
@@ -97,6 +97,12 @@
     header .icons .btn:after
     {
         bottom: -20px;
+    }
+
+
+    header .sub_menu .items.columns
+    {
+        column-width: 180px;
     }
 
 

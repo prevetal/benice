@@ -31,7 +31,7 @@
     /*------------
         Header
     ------------*/
-    header .cont
+    header > .cont
     {
         height: 64px;
     }
@@ -47,6 +47,18 @@
     header .icons .btn:after
     {
         bottom: -22px;
+    }
+
+
+    header .sub_menu
+    {
+        padding: 24px 0 40px;
+    }
+
+
+    header .sub_menu .items.columns
+    {
+        column-width: 200px;
     }
 
 
