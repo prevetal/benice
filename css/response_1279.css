@@ -329,6 +329,15 @@
     }
 
 
+    .products .product .swiper-horizontal > .swiper-pagination-bullets,
+    .products .product .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .products .product .swiper-pagination-custom,
+    .products .product .swiper-pagination-fraction
+    {
+        display: none;
+    }
+
+
     .products .product .info
     {
         padding: 20px 20px 0;

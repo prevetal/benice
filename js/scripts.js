@@ -5,11 +5,25 @@ BODY = document.getElementsByTagName('body')[0]
 
 document.addEventListener('DOMContentLoaded', function () {
 	// Top banner
-	$('.top_banner .close_btn').click(function(e) {
-		e.preventDefault()
+	if ($('.top_banner').length) {
+		$('.top_banner .close_btn').click(function(e) {
+			e.preventDefault()
 
-		$('.top_banner').slideUp(300)
-	})
+			$('.top_banner').slideUp(300)
+		})
+
+		new Swiper('.top_banner .swiper', {
+			spaceBetween: 0,
+			speed: 50000,
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: true
+			},
+			loop: true,
+			slidesPerView: 'auto',
+			allowTouchMove: false
+		})
+	}
 
 
 	// Mob. top banner
@@ -57,15 +71,67 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 
+	// Products thumbs slider
+	const productsThumbsSliders = [],
+		productsThumbs = document.querySelectorAll('.product .thumbs .swiper')
+
+	productsThumbs.forEach((el, i) => {
+		el.classList.add('product_thumbs_s' + i)
+
+		let options = {
+			speed: 50,
+			nested: true,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			spaceBetween: 0,
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			breakpoints: {
+				0: {
+					loop: true,
+					speed: 500,
+					allowTouchMove: true
+				},
+				1280: {
+					loop: false,
+					speed: 50,
+					effect: 'fade',
+					fadeEffect: {
+						crossFade: true
+					},
+					allowTouchMove: false
+				}
+			}
+		}
+
+		productsThumbsSliders.push(new Swiper('.product_thumbs_s' + i, options))
+	})
+
+	let bullets = document.querySelectorAll('.swiper-pagination-bullet')
+
+	if (bullets) {
+		bullets.forEach(bullet => {
+			bullet.addEventListener('mouseover', () => bullet.click())
+		})
+	}
+
+
 	// Products slider
 	const productsSliders = [],
-		products = document.querySelectorAll('.products .swiper')
+		products = document.querySelectorAll('.products .swiper.main')
 
 	products.forEach((el, i) => {
 		el.classList.add('products_s' + i)
 
 		let options = {
-			loop: false,
+			loop: true,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
@@ -74,14 +140,18 @@ document.addEventListener('DOMContentLoaded', function () {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-			lazy: true,
+			// lazy: true,
 			autoplay: {
-				delay: Number(el.getAttribute('data-autoplay')) || 0,
+				enabled: el.getAttribute('data-autoplay') ? true : false,
+				delay: Number(el.getAttribute('data-autoplay')),
 				disableOnInteraction: false
 			},
 			spaceBetween: 5,
 			breakpoints: {
 				0: {
+					slidesPerView: 2
+				},
+				768: {
 					slidesPerView: 'auto'
 				},
 				1024: {
@@ -260,6 +330,25 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		})
 	}
+
+
+	// // Zoom
+	// if (window.outerWidth > 1279) {
+	// 	$('.product_info .image.zoom').each(function (e) {
+	// 		$(this).zoom({
+	// 			url: $(this).data('data-zoom-image'),
+	// 			target: $('.zoomed_image'),
+	// 			magnify: 1,
+	// 			duration: 120,
+	// 			onZoomIn: function() {
+	// 				$(this).closest('.big').find('.zoomed_image').addClass('show')
+	// 			},
+	// 			onZoomOut: function() {
+	// 				$(this).closest('.big').find('.zoomed_image').removeClass('show')
+	// 			}
+	// 		})
+	// 	})
+	// }
 
 
 	// Info block slider
@@ -513,10 +602,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Filter
-	$('.products .head .filter_btn, .filter .close_btn').click(function(e) {
+	$('.products .head .filter_btn, .filter .close_btn, .filter_overlay').click(function(e) {
 		e.preventDefault()
 
-		$('.products .filter').toggleClass('show')
+		$('.products .filter, .filter_overlay').toggleClass('show')
 	})
 
 

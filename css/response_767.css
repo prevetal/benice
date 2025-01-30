@@ -37,6 +37,16 @@
 
 
 
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 32px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -436,9 +446,115 @@
 
 
 
+    .products .swiper-slide
+    {
+        width: auto;
+    }
+
+
+    .products .row > *
+    {
+        width: calc(50% - 5px);
+    }
+
+
+    .products .product .stickers
+    {
+        top: 6px;
+        left: 0;
+    }
+
+
+    .products .product .sticker
+    {
+        font-size: 11px;
+
+        height: 32px;
+    }
+
+
+    .products .product .favorite_btn
+    {
+        top: 5px;
+        right: 5px;
+
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .products .product .favorite_btn .icon
+    {
+        width: 17px;
+        height: 15px;
+    }
+
+
     .products .product .info
     {
-        padding: 16px 16px 0;
+        padding: 12px 8px;
+    }
+
+
+    .products .product .brand
+    {
+        width: 100%;
+    }
+
+
+    .products .product .price
+    {
+        width: 100%;
+        margin-top: 2px;
+        margin-left: 0;
+
+        text-align: left;
+    }
+
+
+    .products .product .name
+    {
+        margin-top: 8px;
+    }
+
+
+    .products .product .name a
+    {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+
+        -webkit-line-clamp: 2;
+    }
+
+
+    .products .product .buy
+    {
+        justify-content: space-between;
+
+        width: 100%;
+
+        gap: 0;
+    }
+
+
+    .products .product .points,
+    .products .product .buy_btn
+    {
+        margin-top: 12px;
+    }
+
+
+    .products .product .points
+    {
+        gap: 4px;
+    }
+
+
+    .products .product .points .icon
+    {
+        width: 26px;
+        height: 15px;
     }
 
 

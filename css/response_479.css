@@ -428,38 +428,10 @@
     /*--------------
         Products
     --------------*/
-    .products .row
+    .products .product .points,
+    .products .product .buy_btn
     {
-        margin-left: 0;
-    }
-
-
-    .products .row > *
-    {
-        width: 100%;
-        margin-left: 0;
-    }
-
-
-
-    /*--------------
-        Products
-    --------------*/
-    .products .swiper-slide
-    {
-        width: 320px;
-    }
-
-
-    .products .product .info
-    {
-        padding: 20px 20px 0;
-    }
-
-
-    .products .product .articul
-    {
-        width: auto;
+        margin-top: 8px;
     }
 
 

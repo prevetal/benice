@@ -213,9 +213,9 @@
     }
 
 
-    .products .row > *
+    .products .product .info
     {
-        width: calc(50% - 5px);
+        padding: 16px 12px 0;
     }
 
 
@@ -424,6 +424,17 @@
     .checkout_info .bonuses
     {
         width: 100%;
+    }
+
+
+
+    /*--------------------
+        Checkout total
+    --------------------*/
+    .checkout_total
+    {
+        position: relative;
+        top: 0;
     }
 
 
