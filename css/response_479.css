@@ -90,9 +90,60 @@
     }
 
 
+    header .currencies > .btn
+    {
+        gap: 6px;
+    }
+
+
     header .icons
     {
-        gap: 18px;
+        margin-left: 0;
+
+        gap: 16px;
+    }
+
+
+    header .icons .btn:after
+    {
+        bottom: -14px;
+    }
+
+
+    header .search .mini_modal
+    {
+        right: 0;
+
+        width: 100%;
+        padding: 0 20px;
+
+        color: var(--text_color);
+    }
+
+
+    header .search .close_btn
+    {
+        right: 9px;
+    }
+
+
+    header .currencies .mini_modal
+    {
+        width: 40px;
+        margin-top: 8px;
+    }
+
+
+    header .currencies .mini_modal .btn
+    {
+        height: 40px;
+    }
+
+
+    header .currencies > .btn img,
+    header .currencies .mini_modal .btn img
+    {
+        transform: scale(.9);
     }
 
 
@@ -116,6 +167,11 @@
         display: none;
     }
 
+
+    header.mob_absolute:not(.is_stuck) .currencies > .btn img
+    {
+        filter: invert(100%);
+    }
 
 
     /*------------------

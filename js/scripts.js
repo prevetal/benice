@@ -111,16 +111,25 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		}
 
-		productsThumbsSliders.push(new Swiper('.product_thumbs_s' + i, options))
-	})
+		const slider = new Swiper('.product_thumbs_s' + i, options)
+		productsThumbsSliders.push(slider)
 
-	let bullets = document.querySelectorAll('.swiper-pagination-bullet')
+		// Bullets
+		const bullets = el.querySelectorAll('.swiper-pagination-bullet')
 
-	if (bullets) {
-		bullets.forEach(bullet => {
-			bullet.addEventListener('mouseover', () => bullet.click())
+		bullets.forEach((bullet, index) => {
+			bullet.addEventListener('mouseover', () => slider.slideTo(index, 50))
+
+			bullet.addEventListener('click', (e) => {
+				e.preventDefault()
+
+				el.querySelector('.thumb').click()
+			})
 		})
-	}
+
+		// Mouseleave
+		el.addEventListener('mouseleave', () => slider.slideTo(0, 50))
+	})
 
 
 	// Products slider
@@ -741,6 +750,23 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		})
 	}
+
+
+	// Select currency
+	$('header .currencies .mini_modal .btn').click(function(e) {
+		e.preventDefault()
+
+		const symbol = $(this).find('img').attr('src')
+
+		$('header .currencies .mini_modal .btn').removeClass('active')
+		$(this).addClass('active')
+
+		$('header .currencies > .btn img').attr('src', symbol)
+
+		$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
 })
 
 

@@ -806,8 +806,6 @@ header .logo
 {
     display: block;
 
-    min-width: 200px;
-
     text-decoration: none;
 
     color: currentColor;
@@ -832,6 +830,9 @@ header .logo img + img
 
 header .menu
 {
+    margin-right: auto;
+    margin-left: auto;
+
     gap: 28px;
 }
 
@@ -1018,7 +1019,7 @@ header .icons
     flex-wrap: wrap;
     justify-content: flex-end;
 
-    min-width: 200px;
+    margin-left: 20px;
 
     gap: 20px;
 }
@@ -1081,8 +1082,8 @@ header .icons .btn .icon
 
 header .icons .favorite .icon
 {
-    width: 17px;
-    height: 15px;
+    width: 18px;
+    height: 16px;
 }
 
 header .icons .cart .icon
@@ -1296,6 +1297,90 @@ header .search .close_btn .icon
 header .search .close_btn:hover
 {
     color: #a0a0a0;
+}
+
+
+
+header .currencies > .btn
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-width: 14px;
+}
+
+
+header .currencies > .btn:after
+{
+    display: none;
+}
+
+
+header .currencies > .btn img
+{
+    display: block;
+
+    height: 16px;
+}
+
+
+header .currencies .mini_modal
+{
+    left: 50%;
+
+    width: 48px;
+    margin-top: 12px;
+
+    transform: translateX(-50%);
+
+    background: #ebebeb;
+
+    filter: drop-shadow(0px 4px 14px rgba(60, 60, 60, .10));
+}
+
+
+header .currencies .mini_modal .btn
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    height: 48px;
+
+    transition: background .2s linear;
+
+    border: 1px solid #e1e1e1;
+}
+
+
+header .currencies .mini_modal .btn:after
+{
+    display: none;
+}
+
+
+header .currencies .mini_modal .btn + .btn
+{
+    border-top: 1px solid #e1e1e1;
+}
+
+
+header .currencies .mini_modal .btn img
+{
+    display: block;
+}
+
+
+header .currencies .mini_modal .btn:hover,
+header .currencies .mini_modal .btn.active
+{
+    background: #fff;
 }
 
 
@@ -4363,7 +4448,8 @@ aside
 
     width: 100%;
     height: 100%;
-    /* cursor: move; */
+
+/* cursor: move; */
 
     object-fit: cover;
 }
