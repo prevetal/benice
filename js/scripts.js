@@ -111,16 +111,25 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		}
 
-		productsThumbsSliders.push(new Swiper('.product_thumbs_s' + i, options))
-	})
+		const slider = new Swiper('.product_thumbs_s' + i, options)
+		productsThumbsSliders.push(slider)
 
-	let bullets = document.querySelectorAll('.swiper-pagination-bullet')
+		// Bullets
+		const bullets = el.querySelectorAll('.swiper-pagination-bullet')
 
-	if (bullets) {
-		bullets.forEach(bullet => {
-			bullet.addEventListener('mouseover', () => bullet.click())
+		bullets.forEach((bullet, index) => {
+			bullet.addEventListener('mouseover', () => slider.slideTo(index, 50))
+
+			bullet.addEventListener('click', (e) => {
+				e.preventDefault()
+
+				el.querySelector('.thumb').click()
+			})
 		})
-	}
+
+		// Mouseleave
+		el.addEventListener('mouseleave', () => slider.slideTo(0, 50))
+	})
 
 
 	// Products slider
