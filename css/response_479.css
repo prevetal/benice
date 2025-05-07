@@ -90,9 +90,40 @@
     }
 
 
+    header .currencies > .btn
+    {
+        gap: 6px;
+    }
+
+
+    header .currencies > .btn img
+    {
+        filter: invert(100%);
+    }
+
+
     header .icons
     {
-        gap: 18px;
+        margin-left: 16px;
+
+        gap: 16px;
+    }
+
+
+    header .search .mini_modal
+    {
+        right: 0;
+
+        width: 100%;
+        padding: 0 20px;
+
+        color: var(--text_color);
+    }
+
+
+    header .search .close_btn
+    {
+        right: 9px;
     }
 
 

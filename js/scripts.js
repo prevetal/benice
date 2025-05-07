@@ -750,6 +750,23 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		})
 	}
+
+
+	// Select currency
+	$('header .currencies .mini_modal .btn').click(function(e) {
+		e.preventDefault()
+
+		const symbol = $(this).find('img').attr('src')
+
+		$('header .currencies .mini_modal .btn').removeClass('active')
+		$(this).addClass('active')
+
+		$('header .currencies > .btn img').attr('src', symbol)
+
+		$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
 })
 
 
