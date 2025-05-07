@@ -96,17 +96,17 @@
     }
 
 
-    header .currencies > .btn img
-    {
-        filter: invert(100%);
-    }
-
-
     header .icons
     {
         margin-left: 16px;
 
         gap: 16px;
+    }
+
+
+    header .icons .btn:after
+    {
+        bottom: -14px;
     }
 
 
@@ -147,6 +147,11 @@
         display: none;
     }
 
+
+    header.mob_absolute:not(.is_stuck) .currencies > .btn img
+    {
+        filter: invert(100%);
+    }
 
 
     /*------------------
