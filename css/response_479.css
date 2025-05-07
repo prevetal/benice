@@ -98,7 +98,7 @@
 
     header .icons
     {
-        margin-left: 16px;
+        margin-left: 0;
 
         gap: 16px;
     }
@@ -124,6 +124,37 @@
     header .search .close_btn
     {
         right: 9px;
+    }
+
+
+    header .currencies .mini_modal
+    {
+        right: auto;
+        left: 50%;
+
+        width: 40px;
+        margin-top: 8px;
+
+        transform: translateX(-50%);
+    }
+
+
+    header .currencies .mini_modal .btn
+    {
+        height: 40px;
+    }
+
+
+    header .currencies > .btn .arr
+    {
+        display: none;
+    }
+
+
+    header .currencies > .btn img,
+    header .currencies .mini_modal .btn img
+    {
+        transform: scale(.9);
     }
 
 
