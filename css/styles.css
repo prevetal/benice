@@ -1307,9 +1307,7 @@ header .currencies > .btn
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-start;
-
-    gap: 8px;
+    justify-content: center;
 }
 
 
@@ -1322,17 +1320,6 @@ header .currencies > .btn:after
 header .currencies > .btn img
 {
     display: block;
-}
-
-
-header .currencies > .btn .arr
-{
-    display: block;
-
-    width: 6px;
-    height: 11px;
-
-    transform: rotate(-90deg);
 }
 
 

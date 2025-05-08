@@ -145,12 +145,6 @@
     }
 
 
-    header .currencies > .btn .arr
-    {
-        display: none;
-    }
-
-
     header .currencies > .btn img,
     header .currencies .mini_modal .btn img
     {
