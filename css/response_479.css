@@ -129,13 +129,8 @@
 
     header .currencies .mini_modal
     {
-        right: auto;
-        left: 50%;
-
         width: 40px;
         margin-top: 8px;
-
-        transform: translateX(-50%);
     }
 
 

@@ -1082,8 +1082,8 @@ header .icons .btn .icon
 
 header .icons .favorite .icon
 {
-    width: 17px;
-    height: 15px;
+    width: 18px;
+    height: 16px;
 }
 
 header .icons .cart .icon
@@ -1325,11 +1325,12 @@ header .currencies > .btn img
 
 header .currencies .mini_modal
 {
-    right: -2px;
-    left: auto;
+    left: 50%;
 
     width: 48px;
     margin-top: 12px;
+
+    transform: translateX(-50%);
 
     background: #ebebeb;
 
