@@ -1308,6 +1308,8 @@ header .currencies > .btn
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+
+    min-width: 14px;
 }
 
 
@@ -1320,6 +1322,8 @@ header .currencies > .btn:after
 header .currencies > .btn img
 {
     display: block;
+
+    height: 16px;
 }
 
 
