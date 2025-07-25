@@ -151,12 +151,12 @@ html.custom_scroll ::-webkit-scrollbar-thumb
 
 body
 {
-    font: var(--font_size) var(--font_family);
-
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    font: var(--font_size) var(--font_family);
 
     color: var(--text_color);
 }
@@ -169,12 +169,12 @@ body.lock
 
 button
 {
+    display: inline-block;
+
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
-
-    display: inline-block;
 
     cursor: pointer;
     vertical-align: top;
@@ -344,12 +344,12 @@ button
 ----------------*/
 .top_banner
 {
-    line-height: 30px;
-
     position: relative;
     z-index: 101;
 
     padding: 16px 40px;
+
+    line-height: 30px;
 
     text-align: center;
     text-transform: uppercase;
@@ -467,15 +467,15 @@ button
 ---------------------*/
 .mob_top_banner
 {
-    font-size: 12px;
-    line-height: 20px;
-
     position: relative;
     z-index: 101;
 
     display: none;
 
     padding: 8px 24px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     white-space: nowrap;
     text-transform: uppercase;
@@ -587,14 +587,14 @@ button
 
 .all_link a
 {
-    font-size: 12px;
-    line-height: 20px;
-
     display: inline-block;
 
     width: 200px;
     max-width: 100%;
     padding: 9px 19px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     transition: .2s linear;
     vertical-align: top;
@@ -632,10 +632,10 @@ button
 
 .pagination .count
 {
+    margin-bottom: 16px;
+
     font-size: 12px;
     line-height: 20px;
-
-    margin-bottom: 16px;
 
     color: #9f9f9f;
 }
@@ -643,14 +643,14 @@ button
 
 .pagination .links
 {
-    font-size: 16px;
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+
+    font-size: 16px;
+    line-height: 20px;
 
     color: #9f9f9f;
 
@@ -704,15 +704,15 @@ button
 
 .pagination .more_btn
 {
-    font-size: 12px;
-    line-height: 20px;
-
     display: inline-block;
 
     width: 200px;
     max-width: 100%;
     margin-top: 20px;
     padding: 9px 19px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     transition: .2s linear;
     vertical-align: top;
@@ -839,11 +839,11 @@ header .menu
 
 header .menu > * > a
 {
-    line-height: 22px;
-
     position: relative;
 
     display: block;
+
+    line-height: 22px;
 
     transition: color .2s linear;
     text-decoration: none;
@@ -947,10 +947,10 @@ header .sub_menu .cont
 
 header .sub_menu .main
 {
+    margin-bottom: 16px;
+
     font-weight: 700;
     line-height: 24px;
-
-    margin-bottom: 16px;
 }
 
 
@@ -964,33 +964,41 @@ header .sub_menu .main a
 
 header .sub_menu .items.columns
 {
-    column-gap: 24px;
-    column-count: 3;
-    column-width: 220px;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    gap: 24px;
 }
 
 
-header .sub_menu .items.columns > *
-{
-    transform: translateZ(0);
-
-    --webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
-}
-
-
-header .sub_menu .items > * + *
+header .sub_menu .items > * + *,
+header .sub_menu .items .col > * + *
 {
     margin-top: 12px;
 }
 
 
+header .sub_menu .items .col
+{
+    width: 220px;
+    max-width: 100%;
+}
+
+
+header .sub_menu .items .col + .col
+{
+    margin-top: 0;
+}
+
+
 header .sub_menu .items a
 {
-    font-size: 14px;
-
     display: inline-block;
+
+    font-size: 14px;
 
     transition: color .2s linear;
     vertical-align: top;
@@ -1010,9 +1018,6 @@ header .sub_menu .items a.active
 
 header .icons
 {
-    font-size: 12px;
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1020,6 +1025,9 @@ header .icons
     justify-content: flex-end;
 
     margin-left: 20px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     gap: 20px;
 }
@@ -1148,12 +1156,12 @@ header .icons > *:hover .dropdown
 
 header .icons .dropdown a
 {
-    font-size: 12px;
-    line-height: 18px;
-
     display: block;
 
     padding: 11px 19px;
+
+    font-size: 12px;
+    line-height: 18px;
 
     transition: .2s linear;
     text-decoration: none;
@@ -1524,14 +1532,14 @@ header .mob_menu_btn.active span:after
 
 .mob_menu .links > * > a
 {
-    font-size: 16px;
-    line-height: 24px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: 16px;
+    line-height: 24px;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -1571,10 +1579,10 @@ header .mob_menu_btn.active span:after
 
 .mob_menu .links .sub a
 {
+    display: block;
+
     font-style: 13px;
     line-height: 19px;
-
-    display: block;
 
     text-decoration: none;
 
@@ -1644,13 +1652,13 @@ aside
 
 .page_title
 {
-    font-size: var(--font_size_title);
-    font-weight: 500;
-    line-height: calc(100% + 10px);
-
     display: block;
 
     margin-top: 32px;
+
+    font-size: var(--font_size_title);
+    font-weight: 500;
+    line-height: calc(100% + 10px);
 }
 
 
@@ -1682,11 +1690,11 @@ aside
 
 .block_head .title
 {
+    display: block;
+
     font-size: var(--font_size_title);
     font-weight: 500;
     line-height: calc(100% + 10px);
-
-    display: block;
 }
 
 
@@ -1788,13 +1796,13 @@ aside
 
 .form .input
 {
-    font-family: var(--font_family);
-    font-size: var(--font_size);
-
     display: block;
 
     width: 100%;
     height: 40px;
+
+    font-family: var(--font_family);
+    font-size: var(--font_size);
 
     transition: border-color .2s linear;
 
@@ -1812,14 +1820,14 @@ aside
 
 .form textarea
 {
-    font-family: var(--font_family);
-    font-size: var(--font_size);
-
     display: block;
 
     width: 100%;
     height: 100px;
     padding: 14px 0;
+
+    font-family: var(--font_family);
+    font-size: var(--font_size);
 
     resize: none;
     transition: border-color .2s linear;
@@ -1854,10 +1862,10 @@ aside
 
 .form .error_text
 {
+    margin-top: 5px;
+
     font-size: 12px;
     line-height: 18px;
-
-    margin-top: 5px;
 
     color: var(--form_error_color);
 }
@@ -1881,12 +1889,12 @@ aside
 
 .form .nice-select .current
 {
-    line-height: 39px;
-
     display: block;
     overflow: hidden;
 
     padding-right: 18px;
+
+    line-height: 39px;
 
     cursor: pointer;
     white-space: nowrap;
@@ -2004,10 +2012,10 @@ aside
 
 .form .exp
 {
+    margin-top: 12px;
+
     font-size: 12px;
     line-height: 20px;
-
-    margin-top: 12px;
 
     color: #9f9f9f;
 }
@@ -2015,9 +2023,6 @@ aside
 
 .form .checkbox
 {
-    font-size: 12px;
-    line-height: 20px;
-
     position: relative;
 
     display: flex;
@@ -2028,6 +2033,9 @@ aside
 
     min-height: 20px;
     padding-left: 23px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     cursor: pointer;
 }
@@ -2120,8 +2128,6 @@ aside
 
 .form .radio
 {
-    line-height: 22px;
-
     position: relative;
 
     display: flex;
@@ -2132,6 +2138,8 @@ aside
 
     min-height: 22px;
     padding-left: 23px;
+
+    line-height: 22px;
 
     cursor: pointer;
 }
@@ -2213,9 +2221,6 @@ aside
 
 .form .radio .tooltip .text
 {
-    font-size: 12px;
-    line-height: 18px;
-
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -2224,6 +2229,9 @@ aside
 
     margin-bottom: 10px;
     padding: 9px 19px;
+
+    font-size: 12px;
+    line-height: 18px;
 
     transform: translateX(-50%);
     text-align: center;
@@ -2262,11 +2270,11 @@ aside
 
 .form .birthday .label
 {
-    line-height: 22px;
-
     position: absolute;
     bottom: 100%;
     left: 0;
+
+    line-height: 22px;
 
     color: #9f9f9f;
 }
@@ -2298,11 +2306,11 @@ aside
 
 .form .gender .label
 {
-    line-height: 22px;
-
     position: absolute;
     bottom: 100%;
     left: 0;
+
+    line-height: 22px;
 
     color: #9f9f9f;
 }
@@ -2330,8 +2338,6 @@ aside
 
 .form .file .selected > *
 {
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -2339,6 +2345,8 @@ aside
     justify-content: space-between;
 
     padding: 9px 13px;
+
+    line-height: 22px;
 
     background: #f9f9f9;
 }
@@ -2374,9 +2382,9 @@ aside
 
 .form .file label
 {
-    line-height: 22px;
-
     display: block;
+
+    line-height: 22px;
 
     cursor: pointer;
     text-transform: uppercase;
@@ -2441,9 +2449,6 @@ aside
 
 .form .file label .tooltip .text
 {
-    font-size: 12px;
-    line-height: 18px;
-
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -2452,6 +2457,9 @@ aside
 
     margin-bottom: 10px;
     padding: 9px 19px;
+
+    font-size: 12px;
+    line-height: 18px;
 
     transform: translateX(-50%);
     text-align: center;
@@ -2487,13 +2495,13 @@ aside
 
 .form .submit_btn
 {
-    font-size: 12px;
-    line-height: 20px;
-
     display: block;
 
     width: 100%;
     height: 40px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -2615,9 +2623,6 @@ aside
 
 .text_block blockquote
 {
-    font-size: var(--font_size_title);
-    line-height: calc(100% + 10px);
-
     display: block;
 
     width: 1156px;
@@ -2626,6 +2631,9 @@ aside
     margin-bottom: 36px;
     margin-left: 52px;
     padding: 19px 0 19px 61px;
+
+    font-size: var(--font_size_title);
+    line-height: calc(100% + 10px);
 
     border-left: 1px solid;
 }
@@ -2740,14 +2748,14 @@ aside
 
 .text_block ol li:before
 {
-    line-height: 38px;
-
     position: absolute;
     top: 0;
     left: 0;
 
     width: 40px;
     height: 40px;
+
+    line-height: 38px;
 
     content: counter(li);
     counter-increment: li;
@@ -2769,11 +2777,11 @@ aside
 
 .text_block table th
 {
+    padding-bottom: 24px;
+
     font-size: 12px;
     font-weight: 600;
     line-height: 18px;
-
-    padding-bottom: 24px;
 
     text-align: left;
     vertical-align: middle;
@@ -2783,10 +2791,10 @@ aside
 
 .text_block table td
 {
-    line-height: 22px;
-
     min-width: 192px;
     padding: 20px 0;
+
+    line-height: 22px;
 
     text-align: left;
     vertical-align: middle;
@@ -2806,9 +2814,9 @@ aside
 
 .text_block table td.price .old
 {
-    font-weight: 400;
-
     margin-left: 6px;
+
+    font-weight: 400;
 
     text-decoration: line-through;
 
@@ -2818,12 +2826,12 @@ aside
 
 .text_block table td .amount
 {
-    font-weight: 700;
-
     display: block;
 
     width: 86px;
     max-width: 100%;
+
+    font-weight: 700;
 
     text-align: center;
 }
@@ -2870,10 +2878,10 @@ aside
 
 .text_block .accordion_item .head .title
 {
+    width: calc(100% - 40px);
+
     font-size: var(--font_size);
     line-height: 22px;
-
-    width: calc(100% - 40px);
 }
 
 
@@ -3032,11 +3040,11 @@ aside
 
 .categories .category .name
 {
+    width: 100%;
+
     font-size: 40px;
     font-weight: 300;
     line-height: 100%;
-
-    width: 100%;
 
     text-transform: uppercase;
 }
@@ -3044,13 +3052,13 @@ aside
 
 .categories .category .btn
 {
-    font-size: 12px;
-    line-height: 20px;
-
     width: 200px;
     max-width: 100%;
     margin-top: 40px;
     padding: 9px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -3230,14 +3238,14 @@ aside
 
 .products .filter .name
 {
-    font-size: 12px;
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 12px;
+    line-height: 20px;
 
     cursor: pointer;
     text-transform: uppercase;
@@ -3310,10 +3318,10 @@ aside
 
 .products .filter .reset_btn
 {
+    margin-left: 29px;
+
     font-size: 12px;
     line-height: 20px;
-
-    margin-left: 29px;
 
     transition: color .2s linear;
 }
@@ -3336,9 +3344,6 @@ aside
 .products .head .sort,
 .products .head .limit
 {
-    font-size: 13px;
-    line-height: 22px;
-
     position: relative;
 
     display: flex;
@@ -3348,6 +3353,9 @@ aside
     justify-content: flex-start;
 
     margin-left: auto;
+
+    font-size: 13px;
+    line-height: 22px;
 
     text-transform: uppercase;
 
@@ -3555,9 +3563,6 @@ aside
 
 .products .product .sticker
 {
-    font-size: 12px;
-    line-height: 16px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -3566,6 +3571,9 @@ aside
 
     height: 36px;
     padding: 0 10px;
+
+    font-size: 12px;
+    line-height: 16px;
 
     text-transform: uppercase;
 
@@ -3793,11 +3801,11 @@ aside
 
 .products .product .price
 {
+    margin-left: auto;
+
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
-
-    margin-left: auto;
 
     text-align: right;
 }
@@ -3805,9 +3813,9 @@ aside
 
 .products .product .price .old
 {
-    font-weight: 400;
-
     margin-left: 6px;
+
+    font-weight: 400;
 
     text-decoration: line-through;
 
@@ -3817,13 +3825,13 @@ aside
 
 .products .product .name
 {
-    font-size: 12px;
-    line-height: 18px;
-
     flex: 1 0 auto;
 
     width: 100%;
     margin-top: 10px;
+
+    font-size: 12px;
+    line-height: 18px;
 
     text-transform: uppercase;
 }
@@ -3861,9 +3869,6 @@ aside
 
 .products .product .points
 {
-    font-size: 12px;
-    line-height: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -3871,6 +3876,9 @@ aside
     justify-content: flex-start;
 
     margin-top: 10px;
+
+    font-size: 12px;
+    line-height: 18px;
 
     gap: 5px;
 }
@@ -3985,10 +3993,10 @@ aside
 
 .discount_banner .title
 {
+    margin-bottom: 48px;
+
     font-size: 40px;
     line-height: calc(100% + 16px);
-
-    margin-bottom: 48px;
 
     text-transform: uppercase;
 
@@ -4010,11 +4018,11 @@ aside
 
 .discount_banner .socials
 {
-    font-size: 18px;
-    line-height: 22px;
-
     display: flex;
     flex-direction: column;
+
+    font-size: 18px;
+    line-height: 22px;
 
     text-transform: uppercase;
 
@@ -4137,12 +4145,12 @@ aside
 
 .sub_categories .link
 {
-    font-size: 12px;
-    line-height: 20px;
-
     display: block;
 
     padding: 4px 19px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     transition: .2s linear;
     text-decoration: none;
@@ -4393,9 +4401,6 @@ aside
 
 .product_info .images .sticker
 {
-    font-size: 12px;
-    line-height: 16px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -4404,6 +4409,9 @@ aside
 
     height: 36px;
     padding: 0 10px;
+
+    font-size: 12px;
+    line-height: 16px;
 
     text-transform: uppercase;
 
@@ -4466,10 +4474,10 @@ aside
 
 .product_info .product_name
 {
+    display: block;
+
     font-size: 16px;
     line-height: 24px;
-
-    display: block;
 
     text-transform: uppercase;
 }
@@ -4477,9 +4485,9 @@ aside
 
 .product_info .desc
 {
-    line-height: 22px;
-
     margin-top: 4px;
+
+    line-height: 22px;
 
     color: #9f9f9f;
 }
@@ -4487,19 +4495,19 @@ aside
 
 .product_info .price
 {
+    margin-top: 24px;
+
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
-
-    margin-top: 24px;
 }
 
 
 .product_info .price .old
 {
-    font-weight: 400;
-
     margin-left: 12px;
+
+    font-weight: 400;
 
     text-decoration: line-through;
 
@@ -4509,8 +4517,6 @@ aside
 
 .product_info .points
 {
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -4518,6 +4524,8 @@ aside
     justify-content: flex-start;
 
     margin-top: 10px;
+
+    line-height: 20px;
 
     gap: 5px;
 }
@@ -4534,8 +4542,6 @@ aside
 
 .product_info .credit
 {
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -4543,6 +4549,8 @@ aside
     justify-content: flex-start;
 
     margin-top: 20px;
+
+    line-height: 22px;
 }
 
 
@@ -4575,13 +4583,13 @@ aside
 
 .product_info .btns .buy_btn
 {
-    line-height: 22px;
-
     display: block;
 
     width: 475px;
     max-width: calc(100% - 62px);
     height: 50px;
+
+    line-height: 22px;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -4658,10 +4666,10 @@ aside
 
 .product_info .colors .label
 {
+    margin-bottom: 12px;
+
     font-weight: 700;
     line-height: 22px;
-
-    margin-bottom: 12px;
 }
 
 
@@ -4718,10 +4726,10 @@ aside
 
 .product_info .colors .color
 {
+    display: block;
+
     font-size: 12px;
     line-height: 18px;
-
-    display: block;
 
     text-align: center;
     text-decoration: none;
@@ -4854,14 +4862,14 @@ aside
 
 .product_info .features > *
 {
-    font-size: 13px;
-    line-height: 26px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: nowrap;
     justify-content: space-between;
+
+    font-size: 13px;
+    line-height: 26px;
 
     white-space: nowrap;
 }
@@ -4892,13 +4900,13 @@ aside
 
 .product_info .as_a_gift .btn
 {
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    line-height: 22px;
 
     transition: color .2s linear;
     text-transform: uppercase;
@@ -4934,14 +4942,14 @@ aside
 
 .cart_info .clear_btn
 {
-    font-size: 12px;
-    line-height: 20px;
-
     position: absolute;
     right: 0;
     bottom: 100%;
 
     margin-bottom: 36px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     transition: color .2s linear;
     text-transform: uppercase;
@@ -4956,9 +4964,6 @@ aside
 
 .cart_info .titles
 {
-    font-size: 12px;
-    font-weight: 600;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -4966,6 +4971,9 @@ aside
     justify-content: flex-start;
 
     margin-bottom: 24px;
+
+    font-size: 12px;
+    font-weight: 600;
 
     text-transform: uppercase;
 }
@@ -5053,9 +5061,6 @@ aside
 
 .cart_info .product .close_btn .tooltip
 {
-    font-size: 12px;
-    line-height: 18px;
-
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -5064,6 +5069,9 @@ aside
 
     margin-bottom: 10px;
     padding: 9px 19px;
+
+    font-size: 12px;
+    line-height: 18px;
 
     transform: translateX(-50%);
     text-align: center;
@@ -5121,11 +5129,11 @@ aside
 
 .cart_info .product .brand
 {
+    margin-bottom: 8px;
+
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
-
-    margin-bottom: 8px;
 
     text-transform: uppercase;
 }
@@ -5144,11 +5152,11 @@ aside
 
 .cart_info .product .name
 {
-    font-size: 12px;
-    line-height: 18px;
-
     width: 412px;
     max-width: 100%;
+
+    font-size: 12px;
+    line-height: 18px;
 
     text-transform: uppercase;
 }
@@ -5167,10 +5175,10 @@ aside
 
 .cart_info .product .articul
 {
+    margin-top: 10px;
+
     font-size: 12px;
     line-height: 18px;
-
-    margin-top: 10px;
 
     color: #9f9f9f;
 }
@@ -5272,15 +5280,15 @@ aside
 
 .cart_info .product .amount .input
 {
-    font-family: var(--font_family);
-    font-size: 12px;
-    font-weight: 700;
-
     display: block;
 
     width: 53px;
     height: 20px;
     padding: 0 10px;
+
+    font-family: var(--font_family);
+    font-size: 12px;
+    font-weight: 700;
 
     text-align: center;
 
@@ -5292,10 +5300,6 @@ aside
 
 .cart_info .product .points
 {
-    font-size: var(--font_size);
-    font-weight: 400;
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -5303,6 +5307,10 @@ aside
     justify-content: flex-start;
 
     margin-top: 4px;
+
+    font-size: var(--font_size);
+    font-weight: 400;
+    line-height: 20px;
 
     gap: 5px;
 }
@@ -5335,11 +5343,11 @@ aside
 
 .checkout_info .section .title
 {
+    margin-bottom: 20px;
+
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-
-    margin-bottom: 20px;
 
     text-transform: uppercase;
 }
@@ -5361,10 +5369,10 @@ aside
 
 .checkout_info .addresses .label
 {
+    margin-bottom: 8px;
+
     font-weight: 700;
     line-height: 22px;
-
-    margin-bottom: 8px;
 }
 
 
@@ -5461,13 +5469,13 @@ aside
 
 .checkout_info .promocode .btn
 {
-    font-size: 12px;
-    line-height: 20px;
-
     display: block;
 
     width: 137px;
     height: 40px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     transition: .2s linear;
     text-transform: none;
@@ -5492,10 +5500,10 @@ aside
 
 .checkout_info .bonuses .label
 {
-    line-height: 22px;
-
     width: 100%;
     margin-bottom: 10px;
+
+    line-height: 22px;
 }
 
 
@@ -5507,13 +5515,13 @@ aside
 
 .checkout_info .bonuses .btn
 {
-    font-size: 12px;
-    line-height: 20px;
-
     display: block;
 
     width: 137px;
     height: 40px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     transition: .2s linear;
     text-transform: none;
@@ -5539,11 +5547,11 @@ aside
 
 .checkout_total .title
 {
+    margin-bottom: 20px;
+
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-
-    margin-bottom: 20px;
 
     text-transform: uppercase;
 }
@@ -5551,13 +5559,13 @@ aside
 
 .checkout_total .prices > *
 {
-    line-height: 22px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    line-height: 22px;
 }
 
 
@@ -5577,9 +5585,9 @@ aside
 
 .checkout_total .prices .price
 {
-    font-weight: 700;
-
     width: calc(100% - 200px);
+
+    font-weight: 700;
 
     white-space: nowrap;
 }
@@ -5587,8 +5595,6 @@ aside
 
 .checkout_total .total_price
 {
-    line-height: 22px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -5597,6 +5603,8 @@ aside
 
     margin-top: 24px;
     padding-top: 24px;
+
+    line-height: 22px;
 
     border-top: 1px solid #d8d8d8;
 }
@@ -5612,10 +5620,10 @@ aside
 
 .checkout_total .total_price .price
 {
+    width: calc(100% - 200px);
+
     font-size: 20px;
     font-weight: 700;
-
-    width: calc(100% - 200px);
 
     white-space: nowrap;
 }
@@ -5623,10 +5631,6 @@ aside
 
 .checkout_total .total_price .points
 {
-    font-size: var(--font_size);
-    font-weight: 400;
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -5634,6 +5638,10 @@ aside
     justify-content: flex-start;
 
     margin-top: 4px;
+
+    font-size: var(--font_size);
+    font-weight: 400;
+    line-height: 20px;
 
     gap: 5px;
 }
@@ -5656,9 +5664,6 @@ aside
 
 .checkout_total .agree .checkbox
 {
-    font-size: 12px;
-    line-height: 20px;
-
     position: relative;
 
     display: flex;
@@ -5669,6 +5674,9 @@ aside
 
     min-height: 20px;
     padding-left: 23px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     cursor: pointer;
 }
@@ -5761,13 +5769,13 @@ aside
 
 .checkout_total .checkout_btn
 {
-    line-height: 22px;
-
     display: block;
 
     width: 100%;
     height: 50px;
     margin-top: 28px;
+
+    line-height: 22px;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -5824,11 +5832,11 @@ aside
 
 .lk_info .section .title
 {
+    margin-bottom: 20px;
+
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-
-    margin-bottom: 20px;
 
     text-transform: uppercase;
 }
@@ -5903,8 +5911,6 @@ aside
 
 .lk_info .order .head
 {
-    line-height: 22px;
-
     position: relative;
 
     display: flex;
@@ -5914,6 +5920,8 @@ aside
     justify-content: flex-start;
 
     padding: 8px 24px 8px 18px;
+
+    line-height: 22px;
 
     cursor: pointer;
     transition: .2s linear;
@@ -5938,11 +5946,11 @@ aside
 
 .lk_info .order .head .price
 {
-    font-weight: 700;
-
     width: 176px;
     max-width: 100%;
     margin-left: auto;
+
+    font-weight: 700;
 }
 
 
@@ -6071,10 +6079,10 @@ aside
 
 .lk_info .bonuses .label
 {
+    margin-bottom: 4px;
+
     font-size: 12px;
     line-height: 20px;
-
-    margin-bottom: 4px;
 }
 
 
@@ -6097,13 +6105,13 @@ aside
 
 .lk_info .bonuses .warnings label
 {
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    line-height: 22px;
 
     cursor: pointer;
 }
@@ -6117,9 +6125,6 @@ aside
 
 .lk_info .bonuses .warnings .toggle
 {
-    font-size: 12px;
-    line-height: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -6128,6 +6133,9 @@ aside
 
     margin-left: 18px;
     padding: 2px;
+
+    font-size: 12px;
+    line-height: 18px;
 
     color: #9f9f9f;
     border: 1px solid var(--text_color);
@@ -6170,9 +6178,6 @@ aside
 
 .lk_info .bonuses_history .titles
 {
-    font-size: 12px;
-    font-weight: 600;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -6180,6 +6185,9 @@ aside
     justify-content: flex-start;
 
     margin-bottom: 24px;
+
+    font-size: 12px;
+    font-weight: 600;
 
     text-transform: uppercase;
 }
@@ -6194,8 +6202,6 @@ aside
 
 .lk_info .bonuses_history .item
 {
-    line-height: 22px;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
@@ -6203,6 +6209,8 @@ aside
     justify-content: flex-start;
 
     padding: 19px 0;
+
+    line-height: 22px;
 
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
@@ -6360,11 +6368,11 @@ aside
 
 .contacts_info .title
 {
+    margin-bottom: 20px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: calc(100% + 10px);
-
-    margin-bottom: 20px;
 
     text-transform: uppercase;
 }
@@ -6400,10 +6408,10 @@ aside
 .contacts_info .locations,
 .contacts_info .time
 {
-    line-height: 22px;
-
     width: 202px;
     max-width: 100%;
+
+    line-height: 22px;
 }
 
 
@@ -6606,10 +6614,10 @@ aside
 
 .cart_added_success .product .name
 {
+    margin-top: 10px;
+
     font-size: 12px;
     line-height: 18px;
-
-    margin-top: 10px;
 
     text-transform: uppercase;
 }
@@ -6635,10 +6643,10 @@ aside
 
 .cart_added_success .product .articul
 {
+    margin-top: 10px;
+
     font-size: 12px;
     line-height: 18px;
-
-    margin-top: 10px;
 
     color: #9f9f9f;
 }
@@ -6646,9 +6654,6 @@ aside
 
 .cart_added_success .product .message
 {
-    font-size: 12px;
-    line-height: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -6657,6 +6662,9 @@ aside
 
     margin-top: auto;
     padding-top: 12px;
+
+    font-size: 12px;
+    line-height: 18px;
 }
 
 
@@ -6711,9 +6719,6 @@ footer .row > *
 
 footer .title
 {
-    font-weight: 600;
-    line-height: 20px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -6721,6 +6726,9 @@ footer .title
     justify-content: space-between;
 
     margin-bottom: 10px;
+
+    font-weight: 600;
+    line-height: 20px;
 
     text-transform: uppercase;
     pointer-events: none;
@@ -6749,11 +6757,11 @@ footer .title.active .arr
 
 footer .links
 {
-    font-size: 12px;
-    line-height: 20px;
-
     display: flex;
     flex-direction: column;
+
+    font-size: 12px;
+    line-height: 20px;
 
     text-transform: uppercase;
 
@@ -6780,10 +6788,10 @@ footer .links a:hover
 footer .phone,
 footer .email
 {
+    margin-top: 10px;
+
     font-size: 12px;
     line-height: 20px;
-
-    margin-top: 10px;
 
     text-transform: uppercase;
 }
@@ -6916,10 +6924,10 @@ footer .privacy_policy_link a:hover
 
 footer .creator
 {
+    margin-left: auto;
+
     font-size: 12px;
     line-height: 20px;
-
-    margin-left: auto;
 
     text-align: right;
 
@@ -6984,10 +6992,10 @@ footer .creator a:hover span
 
 .modal_desc
 {
+    margin-top: 10px;
+
     font-size: 13px;
     line-height: 20px;
-
-    margin-top: 10px;
 
     color: #9f9f9f;
 }
@@ -7027,10 +7035,10 @@ footer .creator a:hover span
 
 .modal .form .forgot_btn
 {
+    margin-left: auto;
+
     font-size: 12px;
     line-height: 20px;
-
-    margin-left: auto;
 
     transition: .2s linear;
     text-transform: uppercase;
@@ -7142,10 +7150,10 @@ footer .creator a:hover span
 
 #gift_modal .product .name
 {
+    margin-top: 10px;
+
     font-size: 12px;
     line-height: 18px;
-
-    margin-top: 10px;
 
     text-transform: uppercase;
 }
@@ -7171,10 +7179,10 @@ footer .creator a:hover span
 
 #gift_modal .product .articul
 {
+    margin-top: 10px;
+
     font-size: 12px;
     line-height: 18px;
-
-    margin-top: 10px;
 
     color: #9f9f9f;
 }
@@ -7182,19 +7190,19 @@ footer .creator a:hover span
 
 #gift_modal .product .price
 {
+    margin-top: 28px;
+
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
-
-    margin-top: 28px;
 }
 
 
 #gift_modal .product .price .old
 {
-    font-weight: 400;
-
     margin-left: 6px;
+
+    font-weight: 400;
 
     text-decoration: line-through;
 

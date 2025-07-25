@@ -100,9 +100,9 @@
     }
 
 
-    header .sub_menu .items.columns
+    header .sub_menu .items .col
     {
-        column-width: 180px;
+        width: 180px;
     }
 
 
