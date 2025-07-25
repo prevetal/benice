@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 
 		new Swiper('.top_banner .swiper', {
-			spaceBetween: 0,
+			spaceBetween: 40,
 			speed: 50000,
 			autoplay: {
 				delay: 1,
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 
 		new Swiper('.mob_top_banner .swiper', {
-			spaceBetween: 0,
+			spaceBetween: 24,
 			speed: 50000,
 			autoplay: {
 				delay: 1,
