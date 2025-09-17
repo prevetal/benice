@@ -188,13 +188,14 @@ button
 .wrap
 {
     position: relative;
-    z-index: 9;
 
     display: flex;
     overflow: clip;
     flex-direction: column;
 
     min-height: 100%;
+
+    z-index: 9;
 
     background: var(--bg);
 }
@@ -281,7 +282,6 @@ button
 .overlay
 {
     position: fixed;
-    z-index: 100;
     top: 0;
     left: 0;
 
@@ -289,6 +289,8 @@ button
 
     width: 100%;
     height: 100%;
+
+    z-index: 100;
 
     opacity: .65;
     background: #000;
@@ -345,12 +347,12 @@ button
 .top_banner
 {
     position: relative;
-    z-index: 101;
 
     padding: 16px 40px;
 
     line-height: 30px;
 
+    z-index: 101;
     text-align: center;
     text-transform: uppercase;
 
@@ -369,7 +371,6 @@ button
 .top_banner .close_btn
 {
     position: absolute;
-    z-index: 3;
     top: 0;
     right: 40px;
     bottom: 0;
@@ -384,6 +385,7 @@ button
     height: 23px;
     margin: auto 0;
 
+    z-index: 3;
     transition: color .2s linear;
 
     color: #898989;
@@ -422,7 +424,6 @@ button
 .top_banner .swiper:after
 {
     position: absolute;
-    z-index: 3;
     top: 0;
     left: 0;
 
@@ -432,6 +433,7 @@ button
     height: 100%;
 
     content: '';
+    z-index: 3;
 
     background: linear-gradient(to right,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }
@@ -468,7 +470,6 @@ button
 .mob_top_banner
 {
     position: relative;
-    z-index: 101;
 
     display: none;
 
@@ -477,6 +478,7 @@ button
     font-size: 12px;
     line-height: 20px;
 
+    z-index: 101;
     white-space: nowrap;
     text-transform: uppercase;
 
@@ -489,7 +491,6 @@ button
 .mob_top_banner:after
 {
     position: absolute;
-    z-index: 3;
     top: 0;
     left: 0;
 
@@ -499,6 +500,7 @@ button
     height: 100%;
 
     content: '';
+    z-index: 3;
 
     background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }
@@ -519,7 +521,6 @@ button
 .mob_top_banner .close_btn
 {
     position: absolute;
-    z-index: 5;
     top: 0;
     right: 10px;
     bottom: 0;
@@ -534,6 +535,7 @@ button
     height: 100%;
     margin: auto 0;
 
+    z-index: 5;
     transition: color .2s linear;
 
     color: #898989;
@@ -750,12 +752,12 @@ button
 .mini_modal
 {
     position: absolute;
-    z-index: 100;
     top: 100%;
     left: 0;
 
     visibility: hidden;
 
+    z-index: 100;
     transition: .2s linear;
     pointer-events: none;
 
@@ -780,11 +782,12 @@ button
 header
 {
     position: sticky;
-    z-index: 101;
     top: 0;
     left: 0;
 
     width: 100%;
+
+    z-index: 101;
 
     border-bottom: 1px solid #ededed;
     background: var(--bg);
@@ -886,7 +889,6 @@ header .menu > * > a.active:after
 header .sub_menu
 {
     position: absolute;
-    z-index: 9;
     top: 100%;
     left: 0;
 
@@ -895,6 +897,7 @@ header .sub_menu
     width: 100%;
     padding: 32px 0 52px;
 
+    z-index: 9;
     transition: .2s linear;
     pointer-events: none;
 
@@ -1221,7 +1224,6 @@ header .search .form .input
 header .search .form .submit_btn
 {
     position: absolute;
-    z-index: 3;
     top: 0;
     right: 42px;
 
@@ -1234,6 +1236,7 @@ header .search .form .submit_btn
     width: 38px;
     height: 100%;
 
+    z-index: 3;
     transition: .2s linear;
 
     border: none;
@@ -1258,7 +1261,6 @@ header .search .form .submit_btn:hover
 header .search .form .sep
 {
     position: absolute;
-    z-index: 3;
     top: 0;
     right: 32px;
     bottom: 0;
@@ -1267,6 +1269,7 @@ header .search .form .sep
     height: 16px;
     margin: auto 0;
 
+    z-index: 3;
     pointer-events: none;
 
     background: #ededed;
@@ -1276,7 +1279,6 @@ header .search .form .sep
 header .search .close_btn
 {
     position: absolute;
-    z-index: 3;
     top: 0;
     right: 0;
 
@@ -1289,6 +1291,7 @@ header .search .close_btn
     width: 11px;
     height: 100%;
 
+    z-index: 3;
     transition: .2s linear;
 }
 
@@ -1476,7 +1479,6 @@ header .mob_menu_btn.active span:after
 .mob_menu
 {
     position: fixed;
-    z-index: 100;
     top: 0;
     left: 100%;
 
@@ -1487,6 +1489,7 @@ header .mob_menu_btn.active span:after
     min-height:         fill-available;
     padding-top: 85px;
 
+    z-index: 100;
     transition: transform .3s linear;
 
     background: var(--bg);
@@ -1914,7 +1917,6 @@ aside
 .form .nice-select-dropdown
 {
     position: absolute;
-    z-index: 9;
     top: 100%;
     left: 0;
 
@@ -1924,6 +1926,7 @@ aside
     width: 100%;
     margin-top: -1px;
 
+    z-index: 9;
     transition: .2s linear;
     transform: none;
 
@@ -1987,7 +1990,6 @@ aside
 .form select ~ .arr
 {
     position: absolute;
-    z-index: 5;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1998,6 +2000,7 @@ aside
     height: 12px;
     margin: auto 0;
 
+    z-index: 5;
     transition: transform .2s linear;
     transform: rotate(-90deg);
     pointer-events: none;
@@ -2174,6 +2177,7 @@ aside
 .form .radio .check:after
 {
     position: absolute;
+    inset: 0;
 
     display: block;
 
@@ -2187,8 +2191,6 @@ aside
     opacity: 0;
     border-radius: 50%;
     background: currentColor;
-
-    inset: 0;
 }
 
 
@@ -2283,7 +2285,6 @@ aside
 .form .birthday .icon
 {
     position: absolute;
-    z-index: 3;
     top: 0;
     right: 0;
     bottom: 0;
@@ -2292,6 +2293,7 @@ aside
     height: 15px;
     margin: auto 0;
 
+    z-index: 3;
     pointer-events: none;
 }
 
@@ -3016,7 +3018,6 @@ aside
 .categories .category .info
 {
     position: absolute;
-    z-index: 3;
     top: 0;
     left: 0;
 
@@ -3029,6 +3030,7 @@ aside
     width: 100%;
     height: 100%;
 
+    z-index: 3;
     transition: opacity .2s linear;
     text-align: center;
 
@@ -3078,12 +3080,12 @@ aside
 .categories .category img
 {
     position: relative;
-    z-index: 1;
 
     display: block;
 
     width: 100%;
 
+    z-index: 1;
     transition: transform .2s linear;
 }
 
@@ -3149,13 +3151,13 @@ aside
 .products .filter
 {
     position: absolute;
-    z-index: 9;
     top: 0;
     right: 100%;
 
     width: 480px;
     height: 100%;
 
+    z-index: 9;
     transition: transform .3s linear;
 
     background: var(--bg);
@@ -3172,7 +3174,6 @@ aside
 .products .filter:before
 {
     position: absolute;
-    z-index: 1;
     top: 50%;
     right: 0;
 
@@ -3180,6 +3181,7 @@ aside
     height: 300%;
 
     content: '';
+    z-index: 1;
     transform: translateY(-50%);
     pointer-events: none;
 
@@ -3190,7 +3192,6 @@ aside
 .products .filter.show
 {
     z-index: 111;
-
     transform: translateX(100%);
 }
 
@@ -3198,11 +3199,12 @@ aside
 .products .filter .scroll
 {
     position: relative;
-    z-index: 3;
 
     overflow: auto;
 
     padding: 0 48px 48px;
+
+    z-index: 3;
 
     overscroll-behavior-y: contain;
 }
@@ -3335,9 +3337,9 @@ aside
 
 .products .filter_overlay.show
 {
-    z-index: 110;
-
     display: block;
+
+    z-index: 110;
 }
 
 
@@ -3409,7 +3411,6 @@ aside
 .products .head .nice-select-dropdown
 {
     position: absolute;
-    z-index: 9;
     top: 100%;
     right: 0;
 
@@ -3418,6 +3419,7 @@ aside
 
     width: 205px;
 
+    z-index: 9;
     transition: .2s linear;
     transform: none;
 
@@ -3481,7 +3483,6 @@ aside
 .products .head .arr
 {
     position: absolute;
-    z-index: 5;
     top: 0;
     right: 4px;
     bottom: 0;
@@ -3492,6 +3493,7 @@ aside
     height: 12px;
     margin: auto 0;
 
+    z-index: 5;
     transition: transform .2s linear;
     transform: rotate(-90deg);
     pointer-events: none;
@@ -3547,7 +3549,6 @@ aside
 .products .product .stickers
 {
     position: absolute;
-    z-index: 3;
     top: 16px;
     left: 16px;
 
@@ -3556,6 +3557,8 @@ aside
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    z-index: 3;
 
     gap: 1px;
 }
@@ -3595,7 +3598,6 @@ aside
 .products .product .favorite_btn
 {
     position: absolute;
-    z-index: 3;
     top: 10px;
     right: 10px;
 
@@ -3608,6 +3610,7 @@ aside
     width: 49px;
     height: 49px;
 
+    z-index: 3;
     transition: .2s linear;
 
     color: #888;
@@ -3743,7 +3746,6 @@ aside
 .products .product .thumb img
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -3751,6 +3753,8 @@ aside
 
     width: 100%;
     height: 100%;
+
+    z-index: 1;
 
     object-fit: cover;
 }
@@ -3987,6 +3991,7 @@ aside
 .discount_banner .cont
 {
     position: relative;
+
     z-index: 3;
 }
 
@@ -4084,7 +4089,6 @@ aside
 .discount_banner .mob_bg
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -4092,6 +4096,8 @@ aside
 
     width: 100%;
     height: 100%;
+
+    z-index: 1;
 
     object-fit: cover;
 }
@@ -4284,7 +4290,6 @@ aside
 .product_info .images .thumbs .image:after
 {
     position: absolute;
-    z-index: 3;
     top: 0;
     left: 0;
 
@@ -4294,6 +4299,7 @@ aside
     height: 100%;
 
     content: '';
+    z-index: 3;
     transition: opacity .2s linear;
 
     opacity: 0;
@@ -4304,7 +4310,7 @@ aside
 .product_info .images .thumbs .image .icon
 {
     position: absolute;
-    z-index: 2;
+    inset: 0;
 
     display: flex;
     align-content: center;
@@ -4317,10 +4323,10 @@ aside
     margin: auto;
     padding-left: 4px;
 
+    z-index: 2;
+
     border-radius: 50%;
     background: #fff;
-
-    inset: 0;
 }
 
 
@@ -4385,7 +4391,6 @@ aside
 .product_info .images .stickers
 {
     position: absolute;
-    z-index: 3;
     top: 16px;
     left: 16px;
 
@@ -4394,6 +4399,8 @@ aside
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    z-index: 3;
 
     gap: 1px;
 }
@@ -4448,7 +4455,6 @@ aside
 .product_info .images .image img
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -4457,6 +4463,7 @@ aside
     width: 100%;
     height: 100%;
 
+    z-index: 1;
 /* cursor: move; */
 
     object-fit: cover;
@@ -4752,7 +4759,6 @@ aside
 .product_info .colors .color .thumb:after
 {
     position: absolute;
-    z-index: 2;
     top: 0;
     left: 0;
 
@@ -4762,6 +4768,7 @@ aside
     height: 100%;
 
     content: '';
+    z-index: 2;
     transition: opacity .2s linear;
 
     opacity: 0;
@@ -4772,7 +4779,6 @@ aside
 .product_info .colors .color .thumb img
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -4780,6 +4786,8 @@ aside
 
     width: 100%;
     height: 100%;
+
+    z-index: 1;
 
     object-fit: cover;
 }
@@ -5013,7 +5021,6 @@ aside
 .cart_info .product
 {
     position: relative;
-    z-index: 3;
 
     display: flex;
     align-content: flex-start;
@@ -5022,6 +5029,8 @@ aside
     justify-content: space-between;
 
     padding: 30px 0;
+
+    z-index: 3;
 
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
@@ -5237,6 +5246,7 @@ aside
 .cart_info .product .amount .btn:after
 {
     position: absolute;
+    inset: 0;
 
     display: block;
 
@@ -5247,8 +5257,6 @@ aside
     content: '';
 
     background: currentColor;
-
-    inset: 0;
 }
 
 
@@ -6338,7 +6346,6 @@ aside
 .contacts_info .cont
 {
     position: relative;
-    z-index: 3;
 
     display: flex;
     align-content: center;
@@ -6350,6 +6357,7 @@ aside
     padding-top: 60px;
     padding-bottom: 60px;
 
+    z-index: 3;
     pointer-events: none;
 }
 
@@ -6477,12 +6485,13 @@ aside
 .contacts_info .map
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
     width: 100%;
     height: 100%;
+
+    z-index: 1;
 
     background: #ddd;
 
@@ -6498,7 +6507,6 @@ aside
 .cart_added_success
 {
     position: absolute;
-    z-index: 5;
     top: 100%;
     right: 48px;
 
@@ -6507,6 +6515,8 @@ aside
     width: 450px;
     max-width: 100vw;
     padding: 9px;
+
+    z-index: 5;
 
     border: 1px solid #ededed;
     background: var(--bg);
