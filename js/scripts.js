@@ -698,14 +698,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// Mob. footer
-	$('footer .title').click(function(e) {
-		e.preventDefault()
-
-		$(this).toggleClass('active').next().slideToggle(300)
-	})
-
-
 	// Sticky mob. header
 	if (WW < 480) {
 		$('header.mob_absolute').stick_in_parent({

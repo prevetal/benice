@@ -4464,6 +4464,7 @@ aside
     height: 100%;
 
     z-index: 1;
+
 /* cursor: move; */
 
     object-fit: cover;
@@ -6745,22 +6746,15 @@ footer .title
 }
 
 
-footer .title .arr
+footer .title a
 {
-    display: none;
+    display: inline-block;
 
-    width: 7px;
-    height: 13px;
-    margin-right: 4px;
+    vertical-align: top;
+    text-decoration: none;
+    pointer-events: none;
 
-    transition: transform .2s linear;
-    transform: rotate(-90deg);
-}
-
-
-footer .title.active .arr
-{
-    transform: rotate(90deg);
+    color: currentColor;
 }
 
 
