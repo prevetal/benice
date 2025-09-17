@@ -117,6 +117,7 @@
 .swiper-pagination-bullet:before
 {
     position: absolute;
+    inset: 0;
 
     display: block;
 
@@ -130,8 +131,6 @@
     opacity: 1;
     border-radius: 50%;
     background: #fff;
-
-    inset: 0;
 }
 
 

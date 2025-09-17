@@ -56,12 +56,12 @@ Build date: 2019-12-19 16:51:02
 .irs-handle
 {
     position: absolute;
-    z-index: 1;
 
     display: block;
 
     box-sizing: border-box;
 
+    z-index: 1;
     cursor: default;
 }
 .irs-handle.type_last
@@ -130,14 +130,14 @@ Build date: 2019-12-19 16:51:02
 }
 .irs-grid-text
 {
-    font-size: 9px;
-    line-height: 9px;
-
     position: absolute;
     bottom: 0;
     left: 0;
 
     padding: 0 3px;
+
+    font-size: 9px;
+    line-height: 9px;
 
     text-align: center;
     white-space: nowrap;
@@ -147,7 +147,6 @@ Build date: 2019-12-19 16:51:02
 .irs-disable-mask
 {
     position: absolute;
-    z-index: 2;
     top: 0;
     left: -1%;
 
@@ -156,6 +155,7 @@ Build date: 2019-12-19 16:51:02
     width: 102%;
     height: 100%;
 
+    z-index: 2;
     cursor: default;
 
     background: rgba(0, 0, 0, 0);
@@ -174,11 +174,7 @@ Build date: 2019-12-19 16:51:02
 }
 .irs-hidden-input
 {
-    font-size: 0 !important;
-    line-height: 0 !important;
-
     position: absolute !important;
-    z-index: -9999 !important;
     top: 0 !important;
     left: 0 !important;
 
@@ -189,6 +185,11 @@ Build date: 2019-12-19 16:51:02
     height: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
+
+    font-size: 0 !important;
+    line-height: 0 !important;
+
+    z-index: -9999 !important;
 
     border-style: solid !important;
     border-color: transparent !important;
@@ -267,14 +268,14 @@ Build date: 2019-12-19 16:51:02
 .irs--flat .irs-min,
 .irs--flat .irs-max
 {
-    font-size: 10px;
-    line-height: 1.333;
-
     top: 0;
 
     display: none !important;
 
     padding: 1px 3px;
+
+    font-size: 10px;
+    line-height: 1.333;
 
     color: #999;
     border-radius: 4px;
@@ -286,10 +287,6 @@ Build date: 2019-12-19 16:51:02
 .irs--flat .irs-to,
 .irs--flat .irs-single
 {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 20px;
-
     position: absolute;
     top: auto;
     bottom: 100%;
@@ -297,6 +294,10 @@ Build date: 2019-12-19 16:51:02
     display: block !important;
 
     margin-bottom: 4px;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
 
     white-space: nowrap;
 
@@ -526,12 +527,12 @@ Build date: 2019-12-19 16:51:02
 .irs--modern .irs-min,
 .irs--modern .irs-max
 {
-    font-size: 10px;
-    line-height: 1.333;
-
     top: 0;
 
     padding: 1px 5px;
+
+    font-size: 10px;
+    line-height: 1.333;
 
     color: white;
     border-radius: 5px;
@@ -542,10 +543,10 @@ Build date: 2019-12-19 16:51:02
 .irs--modern .irs-to,
 .irs--modern .irs-single
 {
+    padding: 1px 5px;
+
     font-size: 10px;
     line-height: 1.333;
-
-    padding: 1px 5px;
 
     color: white;
     border-radius: 5px;
@@ -588,10 +589,10 @@ Build date: 2019-12-19 16:51:02
 }
 .irs--sharp
 {
+    height: 50px;
+
     font-size: 12px;
     line-height: 1;
-
-    height: 50px;
 }
 .irs--sharp.irs-with-grid
 {
@@ -662,12 +663,12 @@ Build date: 2019-12-19 16:51:02
 .irs--sharp .irs-min,
 .irs--sharp .irs-max
 {
-    font-size: 14px;
-    line-height: 1;
-
     top: 0;
 
     padding: 3px 4px;
+
+    font-size: 14px;
+    line-height: 1;
 
     opacity: .4;
     color: white;
@@ -678,10 +679,10 @@ Build date: 2019-12-19 16:51:02
 .irs--sharp .irs-to,
 .irs--sharp .irs-single
 {
+    padding: 3px 4px;
+
     font-size: 14px;
     line-height: 1;
-
-    padding: 3px 4px;
 
     color: white;
     border-radius: 2px;
@@ -779,12 +780,12 @@ Build date: 2019-12-19 16:51:02
 .irs--round .irs-min,
 .irs--round .irs-max
 {
-    font-size: 14px;
-    line-height: 1;
-
     top: 0;
 
     padding: 3px 5px;
+
+    font-size: 14px;
+    line-height: 1;
 
     color: #333;
     border-radius: 4px;
@@ -794,10 +795,10 @@ Build date: 2019-12-19 16:51:02
 .irs--round .irs-to,
 .irs--round .irs-single
 {
+    padding: 3px 5px;
+
     font-size: 14px;
     line-height: 1;
-
-    padding: 3px 5px;
 
     color: white;
     border-radius: 4px;
@@ -892,12 +893,12 @@ Build date: 2019-12-19 16:51:02
 .irs--square .irs-min,
 .irs--square .irs-max
 {
-    font-size: 14px;
-    line-height: 1;
-
     top: 0;
 
     padding: 3px 5px;
+
+    font-size: 14px;
+    line-height: 1;
 
     color: #333;
     background-color: rgba(0, 0, 0, .1);
@@ -906,10 +907,10 @@ Build date: 2019-12-19 16:51:02
 .irs--square .irs-to,
 .irs--square .irs-single
 {
+    padding: 3px 5px;
+
     font-size: 14px;
     line-height: 1;
-
-    padding: 3px 5px;
 
     color: white;
     background-color: black;

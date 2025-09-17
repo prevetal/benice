@@ -286,10 +286,10 @@
 
     .discount_banner .title
     {
+        margin-bottom: 56px;
+
         font-size: 20px;
         line-height: 30px;
-
-        margin-bottom: 56px;
     }
 
 
@@ -393,11 +393,11 @@
 
     .cart_info .product .points
     {
-        font-size: 12px;
-
         justify-content: flex-end;
 
         margin-top: 0;
+
+        font-size: 12px;
     }
 
 
