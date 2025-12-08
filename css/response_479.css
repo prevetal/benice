@@ -564,8 +564,12 @@
     }
 
 
-    footer .phone,
-    footer .email,
+    footer .contacts .item
+    {
+        font-size: 12px;
+    }
+
+
     footer .rating,
     footer .creator
     {
@@ -609,32 +613,6 @@
 
         font-size: 10px;
         line-height: normal;
-    }
-
-
-    footer .socials
-    {
-        width: 120px;
-        margin: 0;
-
-        gap: 20px;
-    }
-
-
-    footer .socials .icon
-    {
-        width: 18px;
-        height: 18px;
-    }
-
-    footer .socials .tg_link .icon
-    {
-        width: 21px;
-    }
-
-    footer .socials .vk_link .icon
-    {
-        width: 24px;
     }
 
 
