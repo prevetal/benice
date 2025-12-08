@@ -470,9 +470,17 @@
     }
 
 
-    footer .socials
+    footer .contacts .item
     {
-        gap: 24px;
+        margin-top: 8px;
+
+        font-size: 11px;
+    }
+
+
+    footer .contacts .item a
+    {
+        gap: 8px;
     }
 
 

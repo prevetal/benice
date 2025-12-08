@@ -421,6 +421,18 @@
     }
 
 
+    .products .head .selected_filters
+    {
+        margin-top: 4px;
+    }
+
+
+    .products .head .selected_filters .btn
+    {
+        padding: 5px 6px 6px 11px;
+    }
+
+
     .products .head .sort,
     .products .head .limit
     {

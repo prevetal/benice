@@ -323,6 +323,78 @@
     }
 
 
+    .products .filter_btn
+    {
+        height: auto;
+    }
+
+
+    .products .head .selected_filters
+    {
+        display: grid;
+        overflow: auto;
+        order: 2;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        margin-top: 16px;
+        padding: 0 24px;
+
+        grid-auto-flow: column;
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .products .head .selected_filters::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .products .head .selected_filters::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .products .head .selected_filters .btn
+    {
+        flex-wrap: nowrap;
+
+        text-align: left;
+        white-space: nowrap;
+
+        color: #fff;
+        border-color: #000;
+        background: #000;
+
+        gap: 8px;
+        scroll-snap-align: start;
+    }
+
+
+    .products .head .selected_filters .btn .icon
+    {
+        color: #000;
+        background: #fff;
+    }
+
+
+    .products .head .sort,
+    .products .head .limit
+    {
+        height: auto;
+    }
+
+
     .products .row > *
     {
         width: calc(33.333% - 5px);

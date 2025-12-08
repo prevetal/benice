@@ -142,9 +142,35 @@
     /*--------------
         Products
     --------------*/
+    .products .filter_btn
+    {
+        height: 33px;
+    }
+
+
     .products .filter
     {
         width: 400px;
+    }
+
+
+    .products .head .selected_filters
+    {
+        width: calc(100% - 615px);
+    }
+
+
+    .products .head .selected_filters .btn
+    {
+        padding: 7px 7px 7px 15px;
+    }
+
+
+    .products .head .sort,
+    .products .head .limit
+    {
+        height: 33px;
+        margin-left: 40px;
     }
 
 

@@ -3123,8 +3123,8 @@ aside
 .products .head
 {
     display: flex;
-    align-content: center;
-    align-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: flex-start;
 
@@ -3134,6 +3134,8 @@ aside
 
 .products .filter_btn
 {
+    height: 37px;
+
     font-size: 13px;
     line-height: 22px;
 
@@ -3354,6 +3356,7 @@ aside
     flex-wrap: wrap;
     justify-content: flex-start;
 
+    height: 37px;
     margin-left: auto;
 
     font-size: 13px;
@@ -3503,6 +3506,104 @@ aside
 .products .head .nice-select.open + .arr
 {
     transform: rotate(90deg);
+}
+
+
+
+.products .head .selected_filters
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: calc(100% - 647px);
+    margin-left: 16px;
+
+    gap: 8px;
+}
+
+
+.products .head .selected_filters .btn
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 9px 9px 9px 19px;
+
+    font-size: 12px;
+    line-height: 75.5%;
+
+    transition: .2s linear;
+
+    color: #182435;
+    border: 1px solid #9f9f9f;
+    border-radius: 19px;
+
+    gap: 10px;
+}
+
+
+.products .head .selected_filters .btn .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 17px;
+    min-width: 17px;
+    height: 17px;
+
+    transition: .2s linear;
+
+    border-radius: 50%;
+    background: #cfcfcf;
+}
+
+
+.products .head .selected_filters .btn .icon svg
+{
+    display: block;
+
+    width: 7px;
+    height: 7px;
+}
+
+
+.products .head .selected_filters .btn:hover
+{
+    color: #bbb;
+    border-color: #000;
+    background: #2b2b2b;
+}
+
+
+.products .head .selected_filters .btn:hover .icon
+{
+    color: #000;
+}
+
+
+.products .head .selected_filters .btn:active,
+.products .head .selected_filters .btn.active
+{
+    color: #fff;
+    border-color: #000;
+    background: #000;
+}
+
+
+.products .head .selected_filters .btn:active .icon,
+.products .head .selected_filters .btn.active .icon
+{
+    color: #000;
+    background: #fff;
 }
 
 
@@ -6789,54 +6890,52 @@ footer .links a:hover
 
 
 
-footer .phone,
-footer .email
+footer .contacts .item
 {
     margin-top: 10px;
 
     font-size: 12px;
-    line-height: 20px;
+    line-height: 245%;
 
     text-transform: uppercase;
 }
 
 
-footer .phone a,
-footer .email a
+footer .contacts .item a
 {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    width: fit-content;
+
+    transition: color .2s linear;
+    white-space: nowrap;
     text-decoration: none;
 
     color: currentColor;
+
+    gap: 10px;
 }
 
 
-
-footer .socials
+footer .contacts .item .icon
 {
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 
-    padding-top: 20px;
-
-    gap: 40px;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
 }
 
 
-footer .socials a
-{
-    display: block;
-
-    transition: .2s linear;
-    text-decoration: none;
-
-    color: #d8d8d8;
-}
-
-
-footer .socials .icon
+footer .contacts .item .icon svg
 {
     display: block;
 
@@ -6845,20 +6944,41 @@ footer .socials .icon
 }
 
 
-footer .socials .tg_link .icon
+footer .contacts .item.tg .icon,
+footer .contacts .item.email .icon
 {
-    width: 24px;
+    transition: background .2s linear;
+
+    color: #fff;
+    border-radius: 50%;
+    background: #000;
 }
 
-footer .socials .vk_link .icon
+
+footer .contacts .item.tg .icon svg
 {
-    width: 28px;
+    width: 12px;
+    height: 10px;
 }
 
 
-footer .socials a:hover
+footer .contacts .item.email .icon svg
 {
-    color: var(--text_color);
+    width: 12px;
+    height: 12px;
+}
+
+
+footer .contacts .item a:hover
+{
+    color: #9f9f9f;
+}
+
+
+footer .contacts .item.tg a:hover .icon,
+footer .contacts .item.email a:hover .icon
+{
+    background: #9f9f9f;
 }
 
 
