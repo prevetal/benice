@@ -4538,7 +4538,8 @@ aside
 }
 
 
-.product_info .images .image
+.product_info .images .image,
+.product_info .images .video
 {
     position: relative;
 
@@ -4553,7 +4554,14 @@ aside
 }
 
 
-.product_info .images .image img
+.product_info .images .video img
+{
+    display: none;
+}
+
+
+.product_info .images .image img,
+.product_info .images .video video
 {
     position: absolute;
     top: 0;
