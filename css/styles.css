@@ -506,6 +506,21 @@ button
 }
 
 
+
+.mob_top_banner.text_type
+{
+    text-align: center;
+    white-space: normal;
+}
+
+
+.mob_top_banner.text_type:before,
+.mob_top_banner.text_type:after
+{
+    display: none;
+}
+
+
 .mob_top_banner:after
 {
     top: 0;
@@ -788,6 +803,7 @@ header
     width: 100%;
 
     z-index: 101;
+    transition: top .3s linear;
 
     border-bottom: 1px solid #ededed;
     background: var(--bg);

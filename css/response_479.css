@@ -53,23 +53,13 @@
     ------------*/
     header.mob_absolute
     {
-        position: absolute;
+        position: sticky;
+
+        margin-bottom: -48px;
 
         color: #fff;
         border: none;
         background: none;
-    }
-
-    .mob_top_banner + header.mob_absolute
-    {
-        top: 37px;
-    }
-
-    .mob_top_banner.hide + header.mob_absolute
-    {
-        top: 0;
-
-        transition: top .3s linear;
     }
 
 
@@ -172,6 +162,7 @@
     {
         filter: invert(100%);
     }
+
 
 
     /*------------------

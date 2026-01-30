@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			e.preventDefault()
 
 			$('.mob_top_banner').addClass('hide').slideUp(300)
+			$('header.mob_absolute').css('top', 0)
 		})
 
 		new Swiper('.mob_top_banner .swiper', {
@@ -698,12 +699,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// Sticky mob. header
-	if (WW < 480) {
-		$('header.mob_absolute').stick_in_parent({
-			offset_top: 0
-		})
-	}
+	// Mob. header
+	header = document.querySelector('header.mob_absolute')
+	headerOffset = header.offsetTop
 
 
 	// Mob. menu
@@ -763,6 +761,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+window.addEventListener('scroll', () => {
+  window.scrollY > headerOffset
+    ? header.classList.add('is_stuck')
+    : header.classList.remove('is_stuck')
+})
+
+
+
 window.addEventListener('resize', function () {
 	WH = window.innerHeight || document.clientHeight || BODY.clientHeight
 
@@ -771,6 +777,11 @@ window.addEventListener('resize', function () {
 	if (typeof WW !== 'undefined' && WW != windowW) {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
+
+
+		// Mob. header
+		header = document.querySelector('header.mob_absolute')
+		headerOffset = header.offsetTop
 
 
 		// Mob. version
