@@ -340,6 +340,13 @@ button
 }
 
 
+.fancybox__html5video,
+.fancybox__iframe
+{
+    background: transparent;
+}
+
+
 
 /*----------------
     Top banner
